@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "framer-motion": "^12.42.0",
+    "lucide": "^1.21.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
+    "react-resizable-panels": "^4.11.2",
     "react-router": "^8.0.1"
   },
   "devDependencies": {
