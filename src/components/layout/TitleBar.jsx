@@ -1,5 +1,6 @@
 import { Minus, Square, X } from "lucide-react";
 import ThemeToggle from "../common/ThemeToggle";
+import { Link } from "react-router";
 
 export default function TitleBar({ onMenuClick }) {
   return (
@@ -25,9 +26,12 @@ export default function TitleBar({ onMenuClick }) {
             <line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
         </button>
-        <span className="text-xs font-medium text-text-main pl-2 md:pl-3">
-          Windows Explorer Portfolio
-        </span>
+        <Link
+          to="/"
+          className="text-xs font-medium text-text-main pl-2 md:pl-3"
+        >
+          naufalrafa.my.id
+        </Link>
       </div>
 
       <div className="flex items-center h-full gap-1">

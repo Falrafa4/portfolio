@@ -3,84 +3,133 @@
     "id": "html",
     "name": "HTML",
     "category": "Frontend",
-    "icon": "Layout",
+    "icon": "/tech-icons/html.svg",
     "level": "Advanced"
   },
   {
     "id": "css",
     "name": "CSS",
     "category": "Frontend",
-    "icon": "Layout",
+    "icon": "/tech-icons/css.svg",
     "level": "Advanced"
   },
   {
     "id": "javascript",
     "name": "JavaScript",
     "category": "Frontend",
-    "icon": "Code",
+    "icon": "/tech-icons/javascript.svg",
+    "level": "Intermediate"
+  },
+  {
+    "id": "bootstrap",
+    "name": "Bootstrap",
+    "category": "Frontend",
+    "icon": "/tech-icons/bootstrap.svg",
     "level": "Intermediate"
   },
   {
     "id": "tailwindcss",
     "name": "Tailwind CSS",
     "category": "Frontend",
-    "icon": "Layout",
+    "icon": "/tech-icons/tailwindcss.svg",
     "level": "Intermediate"
   },
   {
     "id": "react.js",
     "name": "React.js",
     "category": "Frontend",
-    "icon": "Code",
+    "icon": "/tech-icons/react.svg",
     "level": "Intermediate"
   },
   {
     "id": "filament",
     "name": "Filament",
     "category": "Frontend",
-    "icon": "Code",
+    "icon": "/tech-icons/filament.svg",
+    "level": "Beginner"
+  },
+  {
+    "id": "next.js",
+    "name": "Next.js",
+    "category": "Frontend",
+    "icon": "/tech-icons/nextjs.svg",
     "level": "Beginner"
   },
   {
     "id": "php",
     "name": "PHP",
     "category": "Backend",
-    "icon": "Server",
+    "icon": "/tech-icons/php.svg",
     "level": "Intermediate"
   },
   {
     "id": "laravel",
     "name": "Laravel",
     "category": "Backend",
-    "icon": "Server",
+    "icon": "/tech-icons/laravel.svg",
+    "level": "Intermediate"
+  },
+  {
+    "id": "inertia.js",
+    "name": "Inertia.js",
+    "category": "Backend",
+    "icon": "/tech-icons/inertia.svg",
     "level": "Intermediate"
   },
   {
     "id": "mariadb",
     "name": "MariaDB",
     "category": "Database",
-    "icon": "Database",
+    "icon": "/tech-icons/mariadb.svg",
     "level": "Intermediate"
   },
   {
     "id": "postgresql",
     "name": "PostgreSQL",
     "category": "Database",
-    "icon": "Database",
+    "icon": "/tech-icons/postgresql.svg",
     "level": "Beginner"
   },
   {
-    "id": "devops",
-    "name": "DevOps & Deployment",
+    "id": "apache2",
+    "name": "Apache 2",
     "category": "DevOps",
-    "icon": "Cloud",
+    "icon": "/tech-icons/apache.svg",
+    "level": "Beginner"
+  },
+  {
+    "id": "nginx",
+    "name": "Nginx",
+    "category": "DevOps",
+    "icon": "/tech-icons/nginx.svg",
+    "level": "Beginner"
+  },
+  {
+    "id": "cloudflare",
+    "name": "Cloudflare",
+    "category": "DevOps",
+    "icon": "/tech-icons/cloudflare.svg",
+    "level": "Beginner"
+  },
+  {
+    "id": "github-actions",
+    "name": "GitHub Actions",
+    "category": "DevOps",
+    "icon": "/tech-icons/github-actions.svg",
     "level": "Beginner"
   },
   {
     "id": "git",
-    "name": "Git & GitHub",
+    "name": "Git",
     "category": "Version Control",
-    "icon": "GitBranch",
+    "icon": "/tech-icons/git.svg",
+    "level": "Intermediate"
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "category": "Version Control",
+    "icon": "/tech-icons/github.svg",
     "level": "Intermediate"
   }
 ]

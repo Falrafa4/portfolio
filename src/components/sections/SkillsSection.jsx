@@ -22,9 +22,14 @@ export default function SkillsSection({ skills }) {
       
       <div className="space-y-8">
         {Object.entries(groupedSkills).map(([category, categorySkills]) => (
-          <div key={category}>
-            <h3 className="text-sm font-semibold text-text-muted mb-4 uppercase tracking-wider">{category}</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div key={category} className="rounded-2xl border border-border bg-surface/60 p-4 shadow-sm">
+            <div className="mb-4 flex items-center justify-between gap-3">
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-text-muted">{category}</h3>
+              <span className="rounded-full border border-border bg-background px-2.5 py-1 text-xs text-text-muted">
+                {categorySkills.length} skills
+              </span>
+            </div>
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
               {categorySkills.map(skill => (
                 <SkillCard key={skill.id} skill={skill} />
               ))}
