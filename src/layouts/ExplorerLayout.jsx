@@ -23,7 +23,7 @@ export default function ExplorerLayout() {
         
         {/* Main Content Area */}
         <div className="flex-1 overflow-y-auto bg-surface/50">
-          <div className="p-6 max-w-6xl mx-auto min-h-full">
+          <div className="py-10 px-6 max-w-6xl mx-auto min-h-full">
             <Outlet />
           </div>
         </div>

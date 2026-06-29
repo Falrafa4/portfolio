@@ -6,7 +6,7 @@ export default function Breadcrumb() {
   const pathnames = location.pathname.split("/").filter((x) => x);
 
   return (
-    <div className="flex-1 flex items-center border border-border rounded-md bg-background px-3 py-1 text-sm text-text-muted shadow-sm min-w-0">
+    <div className="flex-1 items-center border border-border rounded-md bg-background px-3 py-1 text-sm text-text-muted shadow-sm min-w-0 hidden sm:flex">
       <Link
         to="/"
         className="hover:bg-black/5 dark:hover:bg-white/5 p-1 rounded transition-colors flex items-center"
