@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": "exp-1",
+    "title": "Student SMK Telkom Sidoarjo",
+    "organization": "SMK Telkom Sidoarjo",
+    "type": "Student",
+    "startDate": "2024-07-01",
+    "endDate": "",
+    "location": "Remote",
+    "description": "Currently pursuing a diploma in software engineering, focusing on web development and DevOps practices.",
+    "technologies": ["React", "Node.js", "Docker", "Tailwind CSS"],
+    "current": false
+  },
+  {
+    "id": "exp-2",
+    "title": "Frontend Developer Intern",
+    "organization": "SMP Negeri 1 Waru",
+    "type": "DTP Industry Project",
+    "startDate": "2026-05-01",
+    "endDate": "2026-06-01",
+    "location": "Hybrid (Remote & On-site)",
+    "description": "Worked on developing and maintaining the archive school's website, implementing responsive designs and optimizing performance.",
+    "technologies": ["React.js", "Tailwind CSS", "JavaScript"],
+    "current": false
+  }
+]

@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "id": "ts-1",
+    "name": "React",
+    "category": "Library",
+    "icon": "Code",
+    "officialWebsite": "https://react.dev"
+  },
+  {
+    "id": "ts-2",
+    "name": "Tailwind CSS",
+    "category": "Framework",
+    "icon": "Palette",
+    "officialWebsite": "https://tailwindcss.com"
+  },
+  {
+    "id": "ts-3",
+    "name": "Node.js",
+    "category": "Runtime",
+    "icon": "Terminal",
+    "officialWebsite": "https://nodejs.org"
+  },
+  {
+    "id": "ts-4",
+    "name": "PostgreSQL",
+    "category": "Database",
+    "icon": "Database",
+    "officialWebsite": "https://postgresql.org"
+  }
+]

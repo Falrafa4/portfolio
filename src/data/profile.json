@@ -1,11 +1,11 @@
 {
-  "fullName": "John Doe",
+  "fullName": "Muhammad Naufal Rafa Al As'ad",
   "professionalTitle": "Full Stack Web Developer",
   "secondaryTitle": "DevOps Enthusiast (Currently Learning)",
-  "location": "Earth",
-  "email": "johndoe@example.com",
+  "location": "Sidoarjo, East Java, Indonesia",
+  "email": "mnaufal.rafaa@gmail.com",
   "shortBio": "Building modern web applications.",
   "longBio": "Passionate developer focused on building scalable, performant, and maintainable software.",
-  "profileImage": "",
-  "availabilityStatus": "Available"
+  "profileImage": "/profile.webp",
+  "availabilityStatus": "Active Student"
 }

@@ -1,1 +1,86 @@
-[]
+[
+  {
+    "id": "html",
+    "name": "HTML",
+    "category": "Frontend",
+    "icon": "Layout",
+    "level": "Advanced"
+  },
+  {
+    "id": "css",
+    "name": "CSS",
+    "category": "Frontend",
+    "icon": "Layout",
+    "level": "Advanced"
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "category": "Frontend",
+    "icon": "Code",
+    "level": "Intermediate"
+  },
+  {
+    "id": "tailwindcss",
+    "name": "Tailwind CSS",
+    "category": "Frontend",
+    "icon": "Layout",
+    "level": "Intermediate"
+  },
+  {
+    "id": "react.js",
+    "name": "React.js",
+    "category": "Frontend",
+    "icon": "Code",
+    "level": "Intermediate"
+  },
+  {
+    "id": "filament",
+    "name": "Filament",
+    "category": "Frontend",
+    "icon": "Code",
+    "level": "Beginner"
+  },
+  {
+    "id": "php",
+    "name": "PHP",
+    "category": "Backend",
+    "icon": "Server",
+    "level": "Intermediate"
+  },
+  {
+    "id": "laravel",
+    "name": "Laravel",
+    "category": "Backend",
+    "icon": "Server",
+    "level": "Intermediate"
+  },
+  {
+    "id": "mariadb",
+    "name": "MariaDB",
+    "category": "Database",
+    "icon": "Database",
+    "level": "Intermediate"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "category": "Database",
+    "icon": "Database",
+    "level": "Beginner"
+  },
+  {
+    "id": "devops",
+    "name": "DevOps & Deployment",
+    "category": "DevOps",
+    "icon": "Cloud",
+    "level": "Beginner"
+  },
+  {
+    "id": "git",
+    "name": "Git & GitHub",
+    "category": "Version Control",
+    "icon": "GitBranch",
+    "level": "Intermediate"
+  }
+]
