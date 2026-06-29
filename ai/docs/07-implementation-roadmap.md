@@ -8,9 +8,7 @@
 ---
 
 # General Workflow
-
 For every milestone:
-
 1. Analyze requirements.
 2. Plan the implementation.
 3. Implement only the requested scope.
@@ -20,19 +18,15 @@ For every milestone:
 7. Continue to the next milestone.
 
 Never begin implementing future milestones early.
-
 ---
 
 # Milestone 1
 
 ## Project Foundation
-
 Goal:
-
 Create a solid project foundation.
 
 Tasks:
-
 * Verify project structure.
 * Configure routing.
 * Configure Tailwind CSS.
@@ -43,7 +37,6 @@ Tasks:
 * Configure global styles.
 
 Deliverables:
-
 * Clean project structure.
 * ExplorerLayout ready.
 * React Router working.
@@ -51,24 +44,19 @@ Deliverables:
 * No UI implementation yet.
 
 Validation:
-
 * Project builds successfully.
 * ESLint passes.
 * Routes function correctly.
 * Folder structure matches architecture document.
-
 ---
 
 # Milestone 2
 
 ## Explorer Shell
-
 Goal:
-
 Implement the overall Windows Explorer interface.
 
 Tasks:
-
 * Title Bar.
 * Toolbar.
 * Sidebar.
@@ -78,59 +66,46 @@ Tasks:
 * Responsive Drawer.
 
 Deliverables:
-
-Complete Explorer shell.
-
-Content may still use placeholders.
+- Complete Explorer shell.
+- Content may still use placeholders.
 
 Validation:
-
 * Layout behaves correctly.
 * Navigation works.
 * Responsive behavior verified.
-
 ---
 
 # Milestone 3
 
 ## Home Page
-
 Goal:
-
 Build the Home page.
 
 Sections:
-
 * About Me
 * Experiences
 * Skills
 * Tech Stack
 
 Tasks:
-
 * Read JSON data.
 * Build reusable sections.
 * Responsive layout.
 * Proper spacing.
 
 Validation:
-
 * JSON-driven.
 * Responsive.
 * Accessible.
-
 ---
 
 # Milestone 4
 
 ## Projects Module
-
 Goal:
-
 Implement project listing.
 
 Tasks:
-
 * Project Grid.
 * Project Cards.
 * Search integration.
@@ -138,7 +113,6 @@ Tasks:
 * Status badges.
 
 Validation:
-
 * JSON-driven.
 * Search works.
 * Cards remain reusable.
@@ -148,13 +122,10 @@ Validation:
 # Milestone 5
 
 ## Project Detail
-
 Goal:
-
 Implement detailed project pages.
 
 Tasks:
-
 * Dynamic routing.
 * Thumbnail.
 * Description.
@@ -165,7 +136,6 @@ Tasks:
 * Status.
 
 Validation:
-
 * Every slug resolves correctly.
 * Invalid slug displays Not Found page.
 * Layout consistency maintained.
@@ -175,20 +145,16 @@ Validation:
 # Milestone 6
 
 ## Certificates
-
 Goal:
-
 Implement Certificates page.
 
 Tasks:
-
 * Certificate cards.
 * Search support.
 * Empty state.
 * Responsive layout.
 
 Validation:
-
 * JSON-driven.
 * Search behaves correctly.
 
@@ -197,20 +163,16 @@ Validation:
 # Milestone 7
 
 ## Achievements
-
 Goal:
-
 Implement Achievements page.
 
 Tasks:
-
 * Achievement cards.
 * Competition information.
 * Images.
 * Search support.
 
 Validation:
-
 * Cards render correctly.
 * Responsive.
 * Accessible.
@@ -220,20 +182,16 @@ Validation:
 # Milestone 8
 
 ## Contact
-
 Goal:
-
 Implement Contact page.
 
 Tasks:
-
 * Contact information.
 * Social links.
 * Resume download.
 * External links.
 
 Validation:
-
 * External links open safely.
 * Resume download works.
 
@@ -242,19 +200,15 @@ Validation:
 # Milestone 9
 
 ## Boot Experience
-
 Goal:
-
 Implement startup experience.
 
 Tasks:
-
 * Boot animation.
 * Welcome screen.
 * Local Storage persistence.
 
 Validation:
-
 * Maximum duration ~2 seconds.
 * Returning visitors skip automatically.
 
@@ -263,13 +217,10 @@ Validation:
 # Milestone 10
 
 ## Search System
-
 Goal:
-
 Implement global search.
 
 Search targets:
-
 * Projects
 * Skills
 * Tech Stack
@@ -277,13 +228,11 @@ Search targets:
 * Achievements
 
 Requirements:
-
 * Case-insensitive.
 * Instant filtering.
 * Empty query restores full dataset.
 
 Validation:
-
 * Accurate search results.
 * No noticeable lag.
 
@@ -292,20 +241,16 @@ Validation:
 # Milestone 11
 
 ## Theme System
-
 Goal:
-
 Complete theme implementation.
 
 Tasks:
-
 * Theme toggle.
 * Local Storage.
 * Smooth switching.
 * Component verification.
 
 Validation:
-
 * Every page supports both themes.
 * No hardcoded colors remain.
 
@@ -314,26 +259,20 @@ Validation:
 # Milestone 12
 
 ## Motion & Polish
-
 Goal:
-
 Improve perceived quality.
 
 Tasks:
-
 * Route transitions.
 * Hover animations.
 * Card animations.
 * Drawer animations.
 
 Rules:
-
-Animations should remain subtle.
-
-Performance always takes priority.
+- Animations should remain subtle.
+- Performance always takes priority.
 
 Validation:
-
 * Smooth experience.
 * No animation feels excessive.
 
@@ -342,13 +281,10 @@ Validation:
 # Milestone 13
 
 ## Accessibility
-
 Goal:
-
 Improve usability.
 
 Tasks:
-
 * Keyboard navigation.
 * Focus indicators.
 * Semantic HTML.
@@ -356,7 +292,6 @@ Tasks:
 * Contrast verification.
 
 Validation:
-
 * Entire application usable without a mouse.
 
 ---
@@ -364,13 +299,10 @@ Validation:
 # Milestone 14
 
 ## Performance Optimization
-
 Goal:
-
 Optimize loading performance.
 
 Tasks:
-
 * Lazy loading.
 * Code splitting.
 * Image optimization.
@@ -380,7 +312,6 @@ Tasks:
 Validation:
 
 Target:
-
 Lighthouse Performance ≥ 95
 
 ---
@@ -388,13 +319,10 @@ Lighthouse Performance ≥ 95
 # Milestone 15
 
 ## Quality Assurance
-
 Goal:
-
 Perform a complete project review.
 
 Checklist:
-
 * No ESLint errors.
 * No console warnings.
 * Responsive.
@@ -413,15 +341,11 @@ Fix every issue before continuing.
 # Milestone 16
 
 ## Documentation
-
 Goal:
-
 Prepare the project for future maintenance.
 
 Tasks:
-
 Create a comprehensive README containing:
-
 * Project Overview
 * Tech Stack
 * Installation
@@ -433,7 +357,6 @@ Create a comprehensive README containing:
 * Future Improvements
 
 Documentation should be understandable by developers unfamiliar with the project.
-
 ---
 
 # Completion Criteria
@@ -451,9 +374,7 @@ The project is complete only if all milestones satisfy:
 ---
 
 # Change Management
-
 If a milestone requires modifying work from a previous milestone:
-
 1. Analyze the impact.
 2. Preserve compatibility.
 3. Avoid unnecessary rewrites.
@@ -465,9 +386,7 @@ Never perform large refactors without clear justification.
 ---
 
 # AI Execution Rules
-
 While implementing this roadmap, the AI must:
-
 * Follow all previous documents as the single source of truth.
 * Never invent features that are outside the project scope.
 * Never introduce unnecessary libraries or abstractions.
