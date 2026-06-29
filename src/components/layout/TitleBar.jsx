@@ -8,7 +8,7 @@ export default function TitleBar({ onMenuClick }) {
         {/* Mobile Menu Button - Only visible on small screens */}
         <button
           onClick={onMenuClick}
-          className="md:hidden p-1.5 rounded-md hover:bg-black/10 dark:hover:bg-white/5 text-text-muted"
+          className="md:hidden p-1.5 rounded-md hover:bg-black/5 dark:hover:bg-white/5 text-text-muted"
         >
           <svg
             width="16"
@@ -35,10 +35,10 @@ export default function TitleBar({ onMenuClick }) {
 
         {/* Window Controls - Decorative */}
         <div className="flex items-center h-full ml-2">
-          <button className="h-full px-4 bg-transparent hover:bg-black/10 dark:hover:bg-white/5 text-text-muted transition-colors flex items-center justify-center">
+          <button className="h-full px-4 bg-transparent hover:bg-black/5 dark:hover:bg-white/5 text-text-muted transition-colors flex items-center justify-center">
             <Minus size={16} strokeWidth={1.5} />
           </button>
-          <button className="h-full px-4 bg-transparent hover:bg-black/10 dark:hover:bg-white/5 text-text-muted transition-colors flex items-center justify-center">
+          <button className="h-full px-4 bg-transparent hover:bg-black/5 dark:hover:bg-white/5 text-text-muted transition-colors flex items-center justify-center">
             <Square size={14} strokeWidth={1.5} />
           </button>
           <button className="h-full px-4 bg-transparent hover:bg-red-500! hover:text-white! text-text-muted transition-colors flex items-center justify-center">
