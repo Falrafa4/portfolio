@@ -1,0 +1,11 @@
+{
+  "fullName": "John Doe",
+  "professionalTitle": "Full Stack Web Developer",
+  "secondaryTitle": "DevOps Enthusiast (Currently Learning)",
+  "location": "Earth",
+  "email": "johndoe@example.com",
+  "shortBio": "Building modern web applications.",
+  "longBio": "Passionate developer focused on building scalable, performant, and maintainable software.",
+  "profileImage": "",
+  "availabilityStatus": "Available"
+}
