@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "id": "smart-farm",
+    "slug": "smart-farm",
+    "title": "Smart Farm Dashboard",
+    "shortDescription": "An IoT-enabled agriculture monitoring dashboard showing real-time crop statistics, soil moisture, and greenhouse controls.",
+    "description": "Smart Farm Dashboard is a cutting-edge web application designed for modern precision agriculture. It reads telemetry data from distributed sensors across fields, visualizing soil moisture, environmental temperature, humidity, and NPK nutrients. It allows farmers to optimize watering schedules and crop care, drastically reducing resource wastage.",
+    "thumbnail": "/assets/images/projects/smart-farm.jpg",
+    "technologies": ["React", "Tailwind CSS", "Node.js", "MQTT", "Chart.js"],
+    "features": [
+      "Real-time sensor telemetry updates via MQTT protocol",
+      "Interactive crop health & environmental charts",
+      "Automated automated watering & greenhouse ventilation triggers",
+      "Customizable alert threshold systems for critical values"
+    ],
+    "githubUrl": "https://github.com/naufal/smart-farm-dashboard",
+    "demoUrl": "https://smart-farm.example.com",
+    "role": "Lead Frontend Developer",
+    "status": "Finished",
+    "featured": true
+  },
+  {
+    "id": "kubedeploy",
+    "slug": "kubedeploy",
+    "title": "KubeDeploy Navigator",
+    "shortDescription": "A sleek DevOps portal and automation tool to manage Kubernetes cluster deployments, node health, and service configs.",
+    "description": "KubeDeploy Navigator simplifies multi-cluster Kubernetes administration. It offers real-time node performance graphs, pod resource usage tracking, dynamic replica scaling, and visual deployment rollout monitoring. Developers can manage configs, review container logs, and inspect ingress routers without writing raw kubectl commands.",
+    "thumbnail": "/assets/images/projects/kubedeploy.jpg",
+    "technologies": ["React", "Kubernetes API", "Go", "Docker", "Tailwind CSS"],
+    "features": [
+      "Real-time deployment status indicators",
+      "Live container log streaming and searching",
+      "Visual replica configuration sliders",
+      "Interactive node status graph maps"
+    ],
+    "githubUrl": "https://github.com/naufal/kubedeploy-navigator",
+    "demoUrl": "https://kubedeploy.example.com",
+    "role": "DevOps Engineer / Frontend Developer",
+    "status": "Ongoing",
+    "featured": true
+  },
+  {
+    "id": "spentaru-archive",
+    "slug": "spentaru-archive",
+    "title": "Spentaru Archive System",
+    "shortDescription": "A secured document archive and file repository platform designed for organizational resource management.",
+    "description": "Spentaru Archive System is a high-performance web database built for secure corporate and educational archives. It provides optimized search matching, complex category collections, metadata editing, access permission groups, and activity audits. It is optimized to catalog thousands of records without degrading query speed.",
+    "thumbnail": "/assets/images/projects/spentaru-archive.jpg",
+    "technologies": ["Next.js", "PostgreSQL", "Tailwind CSS", "Prisma"],
+    "features": [
+      "Advanced fuzzy-search query filter system",
+      "Secure document metadata revision auditing",
+      "Dynamic file collection and category folder grouping",
+      "Hierarchical folder access permission rules"
+    ],
+    "githubUrl": "https://github.com/naufal/spentaru-archive",
+    "demoUrl": "https://spentaru.example.com",
+    "role": "Full Stack Developer",
+    "status": "Finished",
+    "featured": false
+  }
+]

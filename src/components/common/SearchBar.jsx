@@ -1,6 +1,9 @@
 import { Search } from 'lucide-react';
+import { useSearch } from '../../hooks/useSearch';
 
 export default function SearchBar() {
+  const { searchQuery, setSearchQuery } = useSearch();
+
   return (
     <div className="relative w-48 md:w-64 flex-shrink-0">
       <div className="absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none">
@@ -9,6 +12,8 @@ export default function SearchBar() {
       <input
         type="text"
         placeholder="Search portfolio"
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
         className="w-full pl-8 pr-3 py-1 text-sm bg-background border border-border rounded-md text-text-main focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-sm placeholder:text-text-muted transition-all"
       />
     </div>
