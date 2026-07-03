@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "id": "cert-aws-solutions-architect",
+    "title": "AWS Certified Solutions Architect - Professional",
+    "issuer": "Amazon Web Services (AWS)",
+    "issueDate": "2024-05-10",
+    "credentialUrl": "https://aws.amazon.com/verification",
+    "image": "/assets/images/certificates/cert-cloud-architect.jpg"
+  },
+  {
+    "id": "cert-advanced-web-developer",
+    "title": "Advanced Full Stack Web Developer Certification",
+    "issuer": "Developer Institute",
+    "issueDate": "2023-11-20",
+    "credentialUrl": "https://devinstitute.example.com/verify/wd-90812-c",
+    "image": "/assets/images/certificates/cert-web-developer.jpg"
+  }
+]
