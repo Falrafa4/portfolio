@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "id": "achieve-national-hackathon",
+    "title": "National Tech Solutions Hackathon",
+    "organizer": "National Tech Association",
+    "year": "2024",
+    "achievement": "1st Place Winner",
+    "description": "Developed a decentralized, offline-first IoT mesh networks monitoring client inside a 36-hour sprint. Won first place among 60+ participating teams.",
+    "image": "/assets/images/achievements/hackathon-trophy.jpg"
+  },
+  {
+    "id": "achieve-open-source-contrib",
+    "title": "Hacktoberfest Top Contributor",
+    "organizer": "DigitalOcean & Partners",
+    "year": "2023",
+    "achievement": "Top Contributor",
+    "description": "Contributed verified production fixes and modular feature components to major open-source tools, including React component suites.",
+    "image": ""
+  }
+]
