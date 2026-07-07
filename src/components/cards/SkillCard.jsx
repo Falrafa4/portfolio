@@ -12,7 +12,7 @@ export default function SkillCard({ skill }) {
           <img
             src={skill.icon}
             alt={`${skill.name} icon`}
-            className="h-full w-full object-contain"
+            className="h-full w-full object-contain filter dark:invert"
             loading="lazy"
           />
         ) : (

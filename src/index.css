@@ -31,8 +31,8 @@
 
   .dark {
     /* Dark Mode Variables (Default as per docs) */
-    --primary: #003A89; /* Still primary blue, might need slightly lighter in dark mode if contrast is bad, but docs said use brand color */
-    --primary-hover: #004db5;
+    --primary: #60a5fa; /* Adjusted for WCAG AA contrast (>4.5:1) on dark surface (#1f2937) */
+    --primary-hover: #3b82f6;
 
     --background: #111827; /* Gray 900 */
     --surface: #1f2937; /* Gray 800 */

@@ -22,11 +22,11 @@ export default function ExplorerLayout() {
         />
         
         {/* Main Content Area */}
-        <div className="flex-1 overflow-y-auto bg-surface/50" id="main-content">
+        <main className="flex-1 overflow-y-auto bg-surface/50" id="main-content">
           <div className="py-10 px-6 max-w-6xl mx-auto min-h-full">
             <Outlet />
           </div>
-        </div>
+        </main>
       </div>
       
       {/* Assuming 5 static items for now until data is connected */}

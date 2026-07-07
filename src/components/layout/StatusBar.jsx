@@ -1,6 +1,6 @@
 export default function StatusBar({ itemCount = 0 }) {
   return (
-    <div className="h-8 bg-surface border-t border-border flex items-center px-4 select-none">
+    <footer className="h-8 bg-surface border-t border-border flex items-center px-4 select-none" role="contentinfo" aria-label="Status bar">
       <span className="text-xs text-text-muted">
         {itemCount} item{itemCount !== 1 ? 's' : ''}
       </span>
@@ -12,6 +12,6 @@ export default function StatusBar({ itemCount = 0 }) {
         <span className="inline-block w-2 h-2 rounded-full bg-green-500"></span>
         Ready
       </span>
-    </div>
+    </footer>
   );
 }
