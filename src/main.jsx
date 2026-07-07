@@ -5,10 +5,12 @@ import './index.css';
 import { SearchProvider } from './context/SearchProvider.jsx';
 import { ThemeProvider } from './context/ThemeProvider.jsx';
 import App from './App.jsx';
+import ScrollToTop from './utils/ScrollToTop.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <ThemeProvider>
         <SearchProvider>
           <App />

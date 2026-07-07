@@ -5,6 +5,7 @@ import SkillsSection from '../../components/sections/SkillsSection';
 import TechStackSection from '../../components/sections/TechStackSection';
 
 import { useSearch } from '../../hooks/useSearch';
+import PageTransition from '../../components/common/PageTransition';
 import profileData from '../../data/profile.json';
 import experiencesData from '../../data/experiences.json';
 import skillsData from '../../data/skills.json';
@@ -37,23 +38,25 @@ export default function Home() {
   const showAboutAndExperience = searchQuery.trim() === '';
 
   return (
-    <div className="max-w-6xl mx-auto pb-10">
-      <div className="flex flex-col gap-6">
-        {showAboutAndExperience && (
-          <>
-            <AboutSection profile={profileData} />
-            <ExperienceSection experiences={experiencesData} />
-          </>
-        )}
-        <SkillsSection skills={filteredSkills} />
-        <TechStackSection techStack={filteredTechStack} />
-        
-        {!showAboutAndExperience && filteredSkills.length === 0 && filteredTechStack.length === 0 && (
-          <div className="text-center py-12 text-text-muted">
-            No matching skills or technologies found on this page.
-          </div>
-        )}
+    <PageTransition>
+      <div className="max-w-6xl mx-auto pb-10">
+        <div className="flex flex-col gap-6">
+          {showAboutAndExperience && (
+            <>
+              <AboutSection profile={profileData} />
+              <ExperienceSection experiences={experiencesData} />
+            </>
+          )}
+          <SkillsSection skills={filteredSkills} />
+          <TechStackSection techStack={filteredTechStack} />
+          
+          {!showAboutAndExperience && filteredSkills.length === 0 && filteredTechStack.length === 0 && (
+            <div className="text-center py-12 text-text-muted">
+              No matching skills or technologies found on this page.
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+    </PageTransition>
   );
 }

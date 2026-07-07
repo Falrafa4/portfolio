@@ -3,6 +3,7 @@ import { useMemo } from 'react';
 import { ArrowLeft, ExternalLink, CheckCircle2, PlayCircle, Archive } from 'lucide-react';
 import projectsData from '../../data/projects.json';
 import EmptyState from '../../components/common/EmptyState';
+import PageTransition from '../../components/common/PageTransition';
 
 export default function ProjectDetail() {
   const { slug } = useParams();
@@ -14,14 +15,16 @@ export default function ProjectDetail() {
   // Handle case where project is not found
   if (!project) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-[60vh] animate-fade-in">
-        <EmptyState
-          title="Project Not Found"
-          message={`We couldn't find a project matching the address "/projects/${slug}". It may have been moved or deleted.`}
-          actionLabel="Back to Projects"
-          onAction={() => window.location.replace('/projects')}
-        />
-      </div>
+      <PageTransition>
+        <div className="flex flex-col items-center justify-center min-h-[60vh]">
+          <EmptyState
+            title="Project Not Found"
+            message={`We couldn't find a project matching the address "/projects/${slug}". It may have been moved or deleted.`}
+            actionLabel="Back to Projects"
+            onAction={() => window.location.replace('/projects')}
+          />
+        </div>
+      </PageTransition>
     );
   }
 
@@ -52,7 +55,8 @@ export default function ProjectDetail() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto pb-12 animate-fade-in">
+    <PageTransition>
+      <div className="max-w-4xl mx-auto pb-12">
       {/* Header and Back Link */}
       <div className="mb-6">
         <Link
@@ -164,5 +168,6 @@ export default function ProjectDetail() {
         </div>
       </div>
     </div>
+    </PageTransition>
   );
 }
