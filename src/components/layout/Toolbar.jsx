@@ -8,7 +8,7 @@ export default function Toolbar() {
   const location = useLocation();
 
   return (
-    <div className="h-12 bg-surface border-b border-border flex items-center px-2 gap-2 md:gap-4 select-none">
+    <div className="h-12 bg-surface border-b border-border flex justify-between items-center px-2 gap-2 md:gap-4 select-none">
       <div className="flex items-center gap-0.5 md:gap-1">
         <button
           onClick={() => navigate(-1)}

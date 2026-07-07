@@ -5,7 +5,7 @@ export default function SearchBar() {
   const { searchQuery, setSearchQuery } = useSearch();
 
   return (
-    <div className="relative w-80 md:w-64 shrink-0">
+    <div className="relative w-fit md:w-64 shrink-0">
       <div className="absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none">
         <Search size={14} className="text-text-muted" />
       </div>
