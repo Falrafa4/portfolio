@@ -1,62 +1,250 @@
 [
   {
-    "id": "smart-farm",
-    "slug": "smart-farm",
-    "title": "Smart Farm Dashboard",
-    "shortDescription": "An IoT-enabled agriculture monitoring dashboard showing real-time crop statistics, soil moisture, and greenhouse controls.",
-    "description": "Smart Farm Dashboard is a cutting-edge web application designed for modern precision agriculture. It reads telemetry data from distributed sensors across fields, visualizing soil moisture, environmental temperature, humidity, and NPK nutrients. It allows farmers to optimize watering schedules and crop care, drastically reducing resource wastage.",
-    "thumbnail": "/assets/images/projects/smart-farm.jpg",
-    "technologies": ["React", "Tailwind CSS", "Node.js", "MQTT", "Chart.js"],
-    "features": [
-      "Real-time sensor telemetry updates via MQTT protocol",
-      "Interactive crop health & environmental charts",
-      "Automated automated watering & greenhouse ventilation triggers",
-      "Customizable alert threshold systems for critical values"
+    "id": "bengkel-wahyu-putra",
+    "slug": "bengkel-wahyu-putra",
+    "title": "Bengkel Wahyu Putra",
+    "shortDescription": "A management system for lathe service orders, offering online service booking and order tracking.",
+    "description": "Bengkel Wahyu Putra is a management system for lathe service orders. It offers key features such as online service booking and order tracking.",
+    "thumbnail": "/assets/images/projects/bengkel-wahyu-putra.webp",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "MySQL"
     ],
-    "githubUrl": "https://github.com/naufal/smart-farm-dashboard",
-    "demoUrl": "https://smart-farm.example.com",
-    "role": "Lead Frontend Developer",
+    "features": [
+      "Landing page with service information and contact form",
+      "Admin dashboard for managing appointments, customers, and orders",
+      "Customer portal for viewing service history and booking appointments",
+      "Responsive design for mobile and desktop devices"
+    ],
+    "githubUrl": "https://github.com/Falrafa4/bengkel-wahyu-putra",
+    "demoUrl": "",
+    "role": "Fullstack Developer",
     "status": "Finished",
     "featured": true
   },
   {
-    "id": "kubedeploy",
-    "slug": "kubedeploy",
-    "title": "KubeDeploy Navigator",
-    "shortDescription": "A sleek DevOps portal and automation tool to manage Kubernetes cluster deployments, node health, and service configs.",
-    "description": "KubeDeploy Navigator simplifies multi-cluster Kubernetes administration. It offers real-time node performance graphs, pod resource usage tracking, dynamic replica scaling, and visual deployment rollout monitoring. Developers can manage configs, review container logs, and inspect ingress routers without writing raw kubectl commands.",
-    "thumbnail": "/assets/images/projects/kubedeploy.jpg",
-    "technologies": ["React", "Kubernetes API", "Go", "Docker", "Tailwind CSS"],
-    "features": [
-      "Real-time deployment status indicators",
-      "Live container log streaming and searching",
-      "Visual replica configuration sliders",
-      "Interactive node status graph maps"
+    "id": "kopi-iot",
+    "slug": "kopi-iot",
+    "title": "Kopi IoT",
+    "shortDescription": "An IoT-based coffee grounds management system that helps coffee vendors monitor and manage their grounds levels efficiently.",
+    "description": "Kopi IoT is an innovative platform that leverages Internet of Things technology to efficiently manage coffee grounds. Our system helps coffee vendors monitor their grounds levels and notifies drivers when it is time for collection, ensuring a cleaner environment and promoting sustainable practices.",
+    "thumbnail": "/assets/images/projects/kopi-iot.webp",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "PHP",
+      "MySQL",
+      "Flask"
     ],
-    "githubUrl": "https://github.com/naufal/kubedeploy-navigator",
-    "demoUrl": "https://kubedeploy.example.com",
-    "role": "DevOps Engineer / Frontend Developer",
-    "status": "Ongoing",
+    "features": [
+      "IoT-based monitoring of coffee grounds levels",
+      "Real-time notifications for drivers when grounds are ready for collection",
+      "Admin dashboard for managing coffee vendors and drivers",
+      "Responsive design for mobile and desktop devices"
+    ],
+    "githubUrl": "https://github.com/Falrafa4/kopi-iot",
+    "demoUrl": "",
+    "role": "Fullstack Developer",
+    "status": "Finished",
+    "featured": true
+  },
+  {
+    "id": "sidowaras",
+    "slug": "sidowaras",
+    "title": "Sidowaras",
+    "shortDescription": "A website that provides information and guidance on Body Mass Index (BMI) and Basal Metabolic Rate (BMR) for the residents of Sidoarjo.",
+    "description": "\"SidoWaras\" is the name of the website we have launched, derived from the phrase \"Sidoarjo Waras\" (meaning \"Healthy Sidoarjo\"). The site addresses the issue of body weight and health, providing information and guidance to the general public—particularly the residents of Sidoarjo—to help them understand their Body Mass Index (BMI) and daily caloric needs (BMR).",
+    "thumbnail": "/assets/images/projects/sidowaras.webp",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "features": [
+      "Interactive BMI and BMR calculators",
+      "Recommendation for healthy lifestyle choices based on BMI and BMR results",
+      "Educational content about healthy lifestyle choices",
+      "Responsive design for mobile and desktop devices"
+    ],
+    "githubUrl": "https://github.com/Falrafa4/sidowaras",
+    "demoUrl": "https://falrafa4.github.io/sidowaras/",
+    "role": "Idea & Web Developer",
+    "status": "Finished",
+    "featured": true
+  },
+  {
+    "id": "aturuang",
+    "slug": "aturuang",
+    "title": "AturUang",
+    "shortDescription": "A financial management and smart budgeting educational website designed to help the younger generation manage their finances independently and practically.",
+    "description": "AturUang is a financial management and smart budgeting educational website designed to help the younger generation manage their finances independently and practically, in a way that aligns with today's digital lifestyle.",
+    "thumbnail": "/assets/images/projects/aturuang.webp",
+    "technologies": [
+      "HTML",
+      "Tailwind CSS",
+      "JavaScript"
+    ],
+    "features": [
+      "Interactive budgeting tools",
+      "Financial goal setting and tracking",
+      "Educational content about financial literacy",
+      "Responsive design for mobile and desktop devices"
+    ],
+    "githubUrl": "https://github.com/Falrafa4/aturuang",
+    "demoUrl": "https://atur-uang-app.vercel.app/",
+    "role": "Idea & Web Developer",
+    "status": "Finished",
+    "featured": true
+  },
+  {
+    "id": "movinfo",
+    "slug": "movinfo",
+    "title": "Movinfo",
+    "shortDescription": "A movie information website providing details about the latest movies and TV shows.",
+    "description": "MovInfo is a comprehensive movie information website that provides detailed information about the latest movies and TV shows, including cast, crew, plot summaries, and user reviews.",
+    "thumbnail": "/assets/images/projects/movie-list.webp",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "API Public"
+    ],
+    "features": [
+      "Interactive movie search and filtering",
+      "Detailed movie and TV show information",
+      "User reviews and ratings",
+      "Responsive design for mobile and desktop devices"
+    ],
+    "githubUrl": "https://github.com/Falrafa4/movie-list",
+    "demoUrl": "https://movie-list-programmer.vercel.app",
+    "role": "Frontend Developer",
+    "status": "Finished",
+    "featured": true
+  },
+  {
+    "id": "the-news",
+    "slug": "the-news",
+    "title": "The News",
+    "shortDescription": "A news website providing the latest updates and articles on various topics.",
+    "description": "The News is a modern news website that delivers the latest updates and in-depth articles on a wide range of topics, including politics, technology, sports, and entertainment.",
+    "thumbnail": "/assets/images/projects/the-news.webp",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "API Public"
+    ],
+    "features": [
+      "Real-time news updates and notifications",
+      "Categorized news articles for easy navigation",
+      "Search functionality for finding specific news topics",
+      "Responsive design for mobile and desktop devices"
+    ],
+    "githubUrl": "https://github.com/Falrafa4/thenews",
+    "demoUrl": "https://news.naufalrafa.my.id",
+    "role": "Frontend Developer",
+    "status": "Finished",
     "featured": true
   },
   {
     "id": "spentaru-archive",
     "slug": "spentaru-archive",
-    "title": "Spentaru Archive System",
-    "shortDescription": "A secured document archive and file repository platform designed for organizational resource management.",
-    "description": "Spentaru Archive System is a high-performance web database built for secure corporate and educational archives. It provides optimized search matching, complex category collections, metadata editing, access permission groups, and activity audits. It is optimized to catalog thousands of records without degrading query speed.",
-    "thumbnail": "/assets/images/projects/spentaru-archive.jpg",
-    "technologies": ["Next.js", "PostgreSQL", "Tailwind CSS", "Prisma"],
-    "features": [
-      "Advanced fuzzy-search query filter system",
-      "Secure document metadata revision auditing",
-      "Dynamic file collection and category folder grouping",
-      "Hierarchical folder access permission rules"
+    "title": "Spentaru Archive",
+    "shortDescription": "A digital archive for storing and managing historical documents and records in SMP Negeri 1 Waru.",
+    "description": "Spentaru Archive is a digital solution for storing and managing historical documents and records in SMP Negeri 1 Waru. It provides a user-friendly interface for searching, browsing, and retrieving archived materials.",
+    "thumbnail": "/assets/images/projects/spentaru-archive.webp",
+    "technologies": [
+      "React.js",
+      "Tailwind CSS",
+      "JavaScript"
     ],
-    "githubUrl": "https://github.com/naufal/spentaru-archive",
-    "demoUrl": "https://spentaru.example.com",
-    "role": "Full Stack Developer",
+    "features": [
+      "Login system with role-based access control",
+      "Document upload and management for administrators",
+      "Search and filter functionality for easy document retrieval",
+      "AI image recognition for document categorization",
+      "Responsive design for mobile and desktop devices"
+    ],
+    "githubUrl": "https://github.com/spentaru-archive-team",
+    "demoUrl": "",
+    "role": "Frontend Developer",
     "status": "Finished",
-    "featured": false
+    "featured": true
+  },
+  {
+    "id": "digitalance",
+    "slug": "digitalance",
+    "title": "Digitalance",
+    "shortDescription": "A web-based marketplace platform for SMK Telkom Sidoarjo, enabling students to showcase and monetize their digital skills.",
+    "description": "Digitalance is a web-based marketplace platform for SMK Telkom Sidoarjo, designed to bridge the gap for talented students to showcase and monetize their digital skills early. It provides a user-friendly interface for browsing, purchasing, and selling digital products and services.",
+    "thumbnail": "/assets/images/projects/digitalance.webp",
+    "technologies": [
+      "Laravel",
+      "REST API"
+    ],
+    "features": [
+      "User registration and authentication system",
+      "Talent showcase for students to display their digital skills and portfolios",
+      "Marketplace for buying and selling digital products and services",
+      "Admin dashboard for managing users, products, and transactions",
+      "Responsive design for mobile and desktop devices"
+    ],
+    "githubUrl": "https://github.com/Falrafa4/digitalance",
+    "demoUrl": "https://digitalance.my.id",
+    "role": "Backend Developer",
+    "status": "Finished",
+    "featured": true
+  },
+  {
+    "id": "samling-ai",
+    "slug": "samling-ai",
+    "title": "Samling AI",
+    "shortDescription": "A data-driven waste management solution that optimizes waste collection operations using advanced analytics and machine learning.",
+    "description": "Samling AI, derived from the Indonesian phrase “Sampah Lingkungan” is a data-driven waste management solution designed to improve the efficiency of waste collection operations. The platform leverages advanced data analytics and machine learning algorithms to optimize waste collection routes, predict waste generation patterns, and enhance overall operational efficiency.",
+    "thumbnail": "/assets/images/projects/samling-ai.webp",
+    "technologies": [
+      "React.js",
+      "Tailwind CSS",
+      "FastAPI"
+    ],
+    "features": [
+      "User registration and authentication system",
+      "Predictive admin dashboard",
+      "Route recommendation for drivers based on waste generation patterns",
+      "Chatbot for society to report waste collection issues and provide feedback",
+      "Responsive design for mobile and desktop devices"
+    ],
+    "githubUrl": "https://github.com/Falrafa4/samling-ai",
+    "demoUrl": "",
+    "role": "Fullstack Developer",
+    "status": "Ongoing",
+    "featured": true
+  },
+  {
+    "id": "samling-ai-driver",
+    "slug": "samling-ai-driver",
+    "title": "Samling AI Driver",
+    "shortDescription": "A mobile-first web app (PWA) designed for waste collection fleet drivers, providing smart navigation route guidance generated in real-time by an AI backend.",
+    "description": "Samling Driver is a mobile-first web app (PWA) designed specifically for waste collection fleet drivers within the Samling AI ecosystem. The application provides smart navigation route guidance—generated in real-time by an AI backend—to effectively address waste accumulation at collection points.",
+    "thumbnail": "/assets/images/projects/samling-ai-driver.webp",
+    "technologies": [
+      "React.js",
+      "Tailwind CSS",
+      "Capacitor",
+      "Android Studio (via Github Actions)"
+    ],
+    "features": [
+      "Driver login and authentication system",
+      "Real-time route guidance based on AI-generated recommendations",
+      "Responsive design for mobile and desktop devices"
+    ],
+    "githubUrl": "https://github.com/Falrafa4/samling-ai-driver",
+    "demoUrl": "",
+    "role": "Fullstack Developer",
+    "status": "Ongoing",
+    "featured": true
   }
 ]

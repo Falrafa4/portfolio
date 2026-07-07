@@ -42,13 +42,6 @@
     "level": "Intermediate"
   },
   {
-    "id": "filament",
-    "name": "Filament",
-    "category": "Frontend",
-    "icon": "/tech-icons/filament.svg",
-    "level": "Beginner"
-  },
-  {
     "id": "next.js",
     "name": "Next.js",
     "category": "Frontend",
@@ -67,13 +60,6 @@
     "name": "Laravel",
     "category": "Backend",
     "icon": "/tech-icons/laravel.svg",
-    "level": "Intermediate"
-  },
-  {
-    "id": "inertia.js",
-    "name": "Inertia.js",
-    "category": "Backend",
-    "icon": "/tech-icons/inertia.svg",
     "level": "Intermediate"
   },
   {
@@ -121,15 +107,29 @@
   {
     "id": "git",
     "name": "Git",
-    "category": "Version Control",
+    "category": "Other Tools",
     "icon": "/tech-icons/git.svg",
     "level": "Intermediate"
   },
   {
     "id": "github",
     "name": "GitHub",
-    "category": "Version Control",
+    "category": "Other Tools",
     "icon": "/tech-icons/github.svg",
+    "level": "Intermediate"
+  },
+  {
+    "id": "filament",
+    "name": "Filament",
+    "category": "Other Tools",
+    "icon": "/tech-icons/filament.svg",
+    "level": "Beginner"
+  },
+  {
+    "id": "inertia.js",
+    "name": "Inertia.js",
+    "category": "Other Tools",
+    "icon": "/tech-icons/inertia.svg",
     "level": "Intermediate"
   }
 ]

@@ -7,9 +7,9 @@
     "startDate": "2024-07-01",
     "endDate": "",
     "location": "Remote",
-    "description": "Currently pursuing a diploma in software engineering, focusing on web development and DevOps practices.",
+    "description": "Currently pursuing vocational education in Information Systems, Networking, and Applications (SIJA), focusing on web development and DevOps practices.",
     "technologies": ["HTML", "CSS", "JavaScript", "Tailwind CSS", "PHP", "Laravel", "React.js", "DevOps"],
-    "current": false
+    "current": true
   },
   {
     "id": "exp-2",
