@@ -1,4 +1,4 @@
-import { useState, Suspense } from 'react';
+import { useState, Suspense, useEffect } from 'react';
 import { Outlet } from 'react-router';
 import TitleBar from '../components/layout/TitleBar';
 import Toolbar from '../components/layout/Toolbar';
@@ -6,9 +6,31 @@ import Sidebar from '../components/layout/Sidebar';
 import StatusBar from '../components/layout/StatusBar';
 import MobileDrawer from '../components/navigation/MobileDrawer';
 import LoadingSkeleton from '../components/common/LoadingSkeleton';
+import BottomNavbar from '../components/navigation/BottomNavbar';
+import { AnimatePresence } from 'framer-motion';
+import clsx from 'clsx';
 
 export default function ExplorerLayout() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(() => {
+    return localStorage.getItem('sidebar_open') === 'true';
+  });
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  const handleToggleSidebar = () => {
+    setIsSidebarOpen((prev) => {
+      const next = !prev;
+      localStorage.setItem('sidebar_open', String(next));
+      return next;
+    });
+  };
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
@@ -33,10 +55,10 @@ export default function ExplorerLayout() {
       {/* Explorer Window container with Mica translucent backdrop-blur */}
       <div className="flex flex-col h-full bg-background/85 dark:bg-background/90 backdrop-blur-xl text-text-main font-sans selection:bg-primary/20">
         <TitleBar onMenuClick={() => setIsMobileMenuOpen(true)} />
-        <Toolbar />
+        <Toolbar isSidebarOpen={isSidebarOpen} onToggleSidebar={handleToggleSidebar} />
         
         <div className="flex flex-1 overflow-hidden relative">
-          <Sidebar className="hidden md:flex" />
+          <Sidebar className={clsx("hidden", isSidebarOpen ? "md:flex" : "md:hidden")} />
           <MobileDrawer 
             isOpen={isMobileMenuOpen} 
             onClose={() => setIsMobileMenuOpen(false)} 
@@ -54,6 +76,13 @@ export default function ExplorerLayout() {
         
         <StatusBar itemCount={5} />
       </div>
+
+      {/* Floating Bottom Taskbar Navigation (Always visible on mobile, togglable on desktop) */}
+      <AnimatePresence>
+        {(!isSidebarOpen || isMobile) && (
+          <BottomNavbar isSidebarOpen={isSidebarOpen} />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

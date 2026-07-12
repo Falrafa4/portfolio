@@ -1,14 +1,7 @@
 import { NavLink } from "react-router";
-import { Home, Briefcase, Award, Star, Mail, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import clsx from "clsx";
-
-const navItems = [
-  { path: "/", label: "Home", icon: Home },
-  { path: "/projects", label: "Projects", icon: Briefcase },
-  { path: "/certificates", label: "Certificates", icon: Award },
-  { path: "/achievements", label: "Achievements", icon: Star },
-  { path: "/contact", label: "Contact", icon: Mail },
-];
+import { navItems } from "../../constants/navigation";
 
 export default function Sidebar({ className = "", onNavigate }) {
   return (

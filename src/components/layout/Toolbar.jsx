@@ -1,9 +1,9 @@
-import { ArrowLeft, ArrowRight, RotateCw } from "lucide-react";
+import { ArrowLeft, ArrowRight, RotateCw, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 import { useNavigate, useLocation } from "react-router";
 import Breadcrumb from "../common/Breadcrumb";
 import SearchBar from "../common/SearchBar";
 
-export default function Toolbar() {
+export default function Toolbar({ isSidebarOpen, onToggleSidebar }) {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -31,6 +31,17 @@ export default function Toolbar() {
           aria-label="Refresh"
         >
           <RotateCw size={16} strokeWidth={1.5} />
+        </button>
+        
+        <div className="hidden md:block w-px h-5 bg-border mx-1"></div>
+        
+        <button
+          onClick={onToggleSidebar}
+          className="hidden md:inline-flex p-1.5 rounded-md hover:bg-black/10 dark:hover:bg-white/10 text-text-main transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1 dark:focus-visible:ring-offset-surface items-center justify-center"
+          aria-label={isSidebarOpen ? "Minimize sidebar" : "Expand sidebar"}
+          title={isSidebarOpen ? "Minimize sidebar" : "Expand sidebar"}
+        >
+          {isSidebarOpen ? <PanelLeftClose size={18} strokeWidth={1.5} /> : <PanelLeftOpen size={18} strokeWidth={1.5} />}
         </button>
       </div>
 
