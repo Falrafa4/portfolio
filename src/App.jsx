@@ -1,21 +1,21 @@
-import { useState } from "react";
+import { useState, lazy } from "react";
 import { Routes, Route } from "react-router";
 import clsx from "clsx";
 import ExplorerLayout from "./layouts/ExplorerLayout";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import ProjectDetail from "./pages/ProjectDetail";
-import Certificates from "./pages/Certificates";
-import Achievements from "./pages/Achievements";
-import Contact from "./pages/Contact";
 import BootSequence from "./components/common/BootSequence";
 import settingsData from "./data/settings.json";
 
+// Lazy loaded page modules to support code splitting
+const Home = lazy(() => import("./pages/Home"));
+const Projects = lazy(() => import("./pages/Projects"));
+const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
+const Certificates = lazy(() => import("./pages/Certificates"));
+const Achievements = lazy(() => import("./pages/Achievements"));
+const Contact = lazy(() => import("./pages/Contact"));
+
 function App() {
-  const [isBooting, setIsBooting] = useState(() => {
-    const hasBooted = localStorage.getItem("has_booted") === "true";
-    return settingsData.enableBootAnimation && !hasBooted;
-  });
+  const shouldSkipBoot = localStorage.getItem('has_booted') === 'true' || !settingsData.enableBootAnimation;
+  const [isBooting, setIsBooting] = useState(!shouldSkipBoot);
 
   const handleBootComplete = () => {
     setIsBooting(false);

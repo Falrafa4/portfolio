@@ -15,6 +15,7 @@ export default function AboutSection({ profile }) {
                   <img
                     src={profile.profileImage}
                     alt={profile.fullName}
+                    loading="lazy"
                     className="h-52 w-52 rounded-[1.25rem] object-cover sm:h-60 sm:w-60 lg:h-64 lg:w-64"
                   />
                 ) : (

@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { Outlet } from 'react-router';
 import TitleBar from '../components/layout/TitleBar';
 import Toolbar from '../components/layout/Toolbar';
 import Sidebar from '../components/layout/Sidebar';
 import StatusBar from '../components/layout/StatusBar';
 import MobileDrawer from '../components/navigation/MobileDrawer';
+import LoadingSkeleton from '../components/common/LoadingSkeleton';
 
 export default function ExplorerLayout() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -24,7 +25,9 @@ export default function ExplorerLayout() {
         {/* Main Content Area */}
         <main className="flex-1 overflow-y-auto bg-surface/50" id="main-content">
           <div className="py-10 px-6 max-w-6xl mx-auto min-h-full">
-            <Outlet />
+            <Suspense fallback={<LoadingSkeleton />}>
+              <Outlet />
+            </Suspense>
           </div>
         </main>
       </div>
