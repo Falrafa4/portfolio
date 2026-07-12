@@ -14,7 +14,7 @@ export default function Sidebar({ className = "", onNavigate }) {
   return (
     <aside
       className={clsx(
-        "w-64 bg-sidebar border-r border-border flex flex-col select-none",
+        "w-64 bg-sidebar/80 dark:bg-sidebar/50 border-r border-border flex flex-col select-none",
         className,
       )}
       aria-label="Explorer sidebar"

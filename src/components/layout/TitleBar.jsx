@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 export default function TitleBar({ onMenuClick }) {
   return (
-    <header className="h-10 bg-surface border-b border-border flex items-center justify-between select-none px-2" role="banner">
+    <header className="h-10 bg-transparent border-b border-border flex items-center justify-between select-none px-2" role="banner">
       <div className="flex items-center gap-3">
         {/* Mobile Menu Button - Only visible on small screens */}
         <button

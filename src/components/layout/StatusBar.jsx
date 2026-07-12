@@ -1,6 +1,6 @@
 export default function StatusBar({ itemCount = 0 }) {
   return (
-    <footer className="h-8 bg-surface border-t border-border flex items-center px-4 select-none" role="contentinfo" aria-label="Status bar">
+    <footer className="h-8 bg-transparent border-t border-border flex items-center px-4 select-none" role="contentinfo" aria-label="Status bar">
       <span className="text-xs text-text-muted">
         {itemCount} item{itemCount !== 1 ? 's' : ''}
       </span>
