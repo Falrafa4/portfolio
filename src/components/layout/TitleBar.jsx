@@ -42,19 +42,19 @@ export default function TitleBar({ onMenuClick }) {
         <div className="flex items-center h-full ml-2" aria-hidden="true">
           <button 
             tabIndex="-1"
-            className="h-full px-4 bg-transparent hover:bg-black/5 dark:hover:bg-white/5 text-text-muted transition-colors flex items-center justify-center cursor-default"
+            className="h-full px-4 bg-transparent hover:bg-black/5 dark:hover:bg-white/5 active:bg-black/5 dark:active:bg-white/5 text-text-muted transition-colors flex items-center justify-center cursor-default"
           >
             <Minus size={16} strokeWidth={1.5} />
           </button>
           <button 
             tabIndex="-1"
-            className="h-full px-4 bg-transparent hover:bg-black/5 dark:hover:bg-white/5 text-text-muted transition-colors flex items-center justify-center cursor-default"
+            className="h-full px-4 bg-transparent hover:bg-black/5 dark:hover:bg-white/5 active:bg-black/5 dark:active:bg-white/5 text-text-muted transition-colors flex items-center justify-center cursor-default"
           >
             <Square size={14} strokeWidth={1.5} />
           </button>
           <button 
             tabIndex="-1"
-            className="h-full px-4 bg-transparent hover:bg-red-500! hover:text-white! text-text-muted transition-colors flex items-center justify-center cursor-default"
+            className="h-full px-4 bg-transparent hover:bg-red-500! hover:text-white! active:bg-red-600! active:text-white! text-text-muted transition-colors flex items-center justify-center cursor-default"
           >
             <X size={16} strokeWidth={1.5} />
           </button>

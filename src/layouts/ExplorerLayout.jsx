@@ -54,7 +54,10 @@ export default function ExplorerLayout() {
 
       {/* Explorer Window container with Mica translucent backdrop-blur */}
       <div className="flex flex-col h-full bg-background/85 dark:bg-background/90 backdrop-blur-xl text-text-main font-sans selection:bg-primary/20">
-        <TitleBar onMenuClick={() => setIsMobileMenuOpen(true)} />
+        <TitleBar onMenuClick={() => {
+          setIsMobileMenuOpen(true);
+          handleToggleSidebar();
+        }} />
         <Toolbar isSidebarOpen={isSidebarOpen} onToggleSidebar={handleToggleSidebar} />
         
         <div className="flex flex-1 overflow-hidden relative">
@@ -77,9 +80,9 @@ export default function ExplorerLayout() {
         <StatusBar itemCount={5} />
       </div>
 
-      {/* Floating Bottom Taskbar Navigation (Always visible on mobile, togglable on desktop) */}
+      {/* Floating Bottom Taskbar Navigation (Always visible on mobile, togglable on desktop, hidden when mobile menu is open) */}
       <AnimatePresence>
-        {(!isSidebarOpen || isMobile) && (
+        {(!isSidebarOpen || isMobile) && !isMobileMenuOpen && (
           <BottomNavbar isSidebarOpen={isSidebarOpen} />
         )}
       </AnimatePresence>

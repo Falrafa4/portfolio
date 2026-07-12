@@ -27,7 +27,7 @@ export default function Sidebar({ className = "", onNavigate }) {
                   "flex items-center gap-3 px-3 py-1.5 rounded-md text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1 dark:focus-visible:ring-offset-sidebar",
                   isActive
                     ? "bg-primary/10 text-primary font-medium"
-                    : "text-text-main hover:bg-black/10 dark:hover:bg-white/10",
+                    : "text-text-main hover:bg-black/10 dark:hover:bg-white/10 active:bg-black/10 dark:active:bg-white/10",
                 )
               }
             >
