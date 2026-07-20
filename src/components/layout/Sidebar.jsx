@@ -16,7 +16,7 @@ export default function Sidebar({ className = "", onNavigate }) {
         <div className="px-3 py-1.5 flex items-center text-xs font-semibold text-text-muted">
           <ChevronRight size={14} className="mr-1" /> Quick Access
         </div>
-        <nav className="flex flex-col px-2 space-y-0.5 mt-1">
+        <nav className="flex flex-col px-2 space-y-1 mt-1">
           {navItems.map((item) => (
             <NavLink
               key={item.path}
@@ -24,7 +24,7 @@ export default function Sidebar({ className = "", onNavigate }) {
               onClick={onNavigate}
               className={({ isActive }) =>
                 clsx(
-                  "flex items-center gap-3 px-3 py-1.5 rounded-md text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1 dark:focus-visible:ring-offset-sidebar",
+                  "flex items-center gap-3 px-3 py-3 rounded-md text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1 dark:focus-visible:ring-offset-sidebar",
                   isActive
                     ? "bg-primary/10 text-primary font-medium"
                     : "text-text-main hover:bg-black/10 dark:hover:bg-white/10 active:bg-black/10 dark:active:bg-white/10",
