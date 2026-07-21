@@ -18,16 +18,16 @@ export default function ProjectCard({ project }) {
   return (
     <Link
       to={`/projects/${project.slug}`}
-      className="group flex flex-col bg-surface border border-border rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:border-primary/50 hover:bg-black/10 dark:hover:bg-white/10 transition-all select-none focus:outline-none focus:ring-2 focus:ring-primary"
+      className="group flex flex-col overflow-hidden rounded-[1.35rem] border border-border/80 bg-surface/80 shadow-[0_18px_45px_-30px_rgba(15,23,42,0.55)] backdrop-blur-xl transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_24px_55px_-30px_rgba(37,99,235,0.45)] focus:outline-none focus:ring-2 focus:ring-primary select-none"
     >
       {/* Thumbnail */}
-      <div className="relative aspect-video w-full overflow-hidden bg-background border-b border-border">
+        <div className="relative aspect-video w-full overflow-hidden border-b border-border/70 bg-background">
         {project.thumbnail ? (
           <img
             src={project.thumbnail}
             alt={project.title}
             loading="lazy"
-            className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300"
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center text-text-muted">
@@ -44,7 +44,7 @@ export default function ProjectCard({ project }) {
         
         {/* Status Badge */}
         <span className={clsx(
-          "absolute top-2.5 right-2.5 text-xs font-semibold px-2 py-0.5 rounded-full backdrop-blur-sm",
+          "absolute right-3 top-3 rounded-full px-2.5 py-1 text-xs font-semibold backdrop-blur-sm",
           getStatusColor(project.status)
         )}>
           {project.status}
@@ -52,7 +52,7 @@ export default function ProjectCard({ project }) {
       </div>
 
       {/* Content */}
-      <div className="flex-1 flex flex-col p-4">
+      <div className="flex flex-1 flex-col p-5">
         <h3 className="text-base font-semibold text-text-main group-hover:text-primary transition-colors line-clamp-1 mb-1">
           {project.title}
         </h3>
@@ -72,7 +72,7 @@ export default function ProjectCard({ project }) {
           {project.technologies?.slice(0, 3).map((tech) => (
             <span
               key={tech}
-              className="text-xs font-mono px-2 py-0.5 bg-background border border-border text-text-muted rounded-md"
+              className="rounded-lg border border-border bg-background px-2 py-1 font-mono text-xs text-text-muted"
             >
               {tech}
             </span>

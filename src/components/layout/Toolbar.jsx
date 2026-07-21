@@ -8,7 +8,7 @@ export default function Toolbar({ isSidebarOpen, onToggleSidebar }) {
   const location = useLocation();
 
   return (
-    <div className="h-12 bg-surface/80 dark:bg-surface/60 border-b border-border flex justify-between items-center px-2 gap-2 md:gap-4 select-none" role="toolbar" aria-label="Explorer toolbar">
+    <div className="flex h-12 items-center justify-between gap-2 border-b border-border bg-surface/80 px-2 select-none dark:bg-surface/60 md:gap-4" role="toolbar" aria-label="Explorer toolbar">
       <div className="flex items-center gap-0.5 md:gap-1">
         <button
           onClick={() => navigate(-1)}
@@ -45,7 +45,9 @@ export default function Toolbar({ isSidebarOpen, onToggleSidebar }) {
         </button>
       </div>
 
-      <Breadcrumb />
+      <div className="hidden min-w-0 flex-1 md:block">
+        <Breadcrumb />
+      </div>
 
       <SearchBar />
     </div>

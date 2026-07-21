@@ -54,7 +54,18 @@
   body {
     margin: 0;
     padding: 0;
+    min-width: 320px;
+    background: var(--background);
   }
+}
+
+@keyframes bento-drift {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(2%, -2%, 0) scale(1.06); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .bento-drift { animation: bento-drift 16s ease-in-out infinite; }
 }
 
 /* Custom Scrollbar for modern thin look */

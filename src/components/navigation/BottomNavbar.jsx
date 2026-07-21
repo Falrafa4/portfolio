@@ -11,7 +11,7 @@ export default function BottomNavbar({ isSidebarOpen }) {
       exit={{ y: 60, x: "-50%", opacity: 0 }}
       transition={{ type: "spring", stiffness: 350, damping: 26 }}
       className={clsx(
-        "fixed bottom-6 left-1/2 z-40 flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border bg-surface/85 dark:bg-surface/65 backdrop-blur-md shadow-xl shadow-black/10 dark:shadow-black/25 select-none",
+        "fixed bottom-3 left-1/2 z-40 flex items-center gap-1 rounded-full border border-border bg-surface/90 px-2.5 py-1.5 shadow-xl shadow-black/10 backdrop-blur-md dark:bg-surface/80 dark:shadow-black/25 sm:bottom-6 sm:gap-1.5 sm:px-3 select-none",
         isSidebarOpen ? "md:hidden" : "flex",
       )}
       role="navigation"
@@ -23,7 +23,7 @@ export default function BottomNavbar({ isSidebarOpen }) {
           to={item.path}
           className={({ isActive }) =>
             clsx(
-              "group relative flex flex-col items-center justify-center w-11 h-11 rounded-full text-text-muted hover:text-text-main active:text-text-main? transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1 dark:focus-visible:ring-offset-surface",
+              "group relative flex h-10 w-10 flex-col items-center justify-center rounded-full text-text-muted transition-colors hover:text-text-main focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1 dark:focus-visible:ring-offset-surface sm:h-11 sm:w-11",
               isActive
                 ? "bg-primary/8 text-primary!"
                 : "hover:bg-black/5 dark:hover:bg-white/5 active:bg-black/5 dark:active:bg-white/5",
