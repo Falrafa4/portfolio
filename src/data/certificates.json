@@ -1,18 +1,31 @@
 [
   {
-    "id": "cert-aws-solutions-architect",
-    "title": "AWS Certified Solutions Architect - Professional",
-    "issuer": "Amazon Web Services (AWS)",
-    "issueDate": "2024-05-10",
-    "credentialUrl": "https://aws.amazon.com/verification",
-    "image": "/assets/images/certificates/cert-cloud-architect.jpg"
+    "id": "cert-cyber-security-awareness",
+    "title": "Cyber Security Awareness Training",
+    "issuer": "Yayasan Pendidikan Telkom",
+    "issueDate": "2024-07-02",
+    "category": "Bootcamps & Courses",
+    "pdfUrl": "https://drive.google.com/file/d/1n9Lf3bkbV5NNTg-t6GgJtWtd0NhAABuG/view?usp=sharing",
+    "image": "/assets/images/certificates/cert-cyber-security-awareness.jpg"
   },
   {
-    "id": "cert-advanced-web-developer",
-    "title": "Advanced Full Stack Web Developer Certification",
-    "issuer": "Developer Institute",
-    "issueDate": "2023-11-20",
-    "credentialUrl": "https://devinstitute.example.com/verify/wd-90812-c",
-    "image": "/assets/images/certificates/cert-web-developer.jpg"
-  }
+    "id": "cert-javascript-dasar",
+    "title": "Basic Javascript Course",
+    "issuer": "Codepolitan",
+    "issueDate": "2024-12-27",
+    "category": "Bootcamps & Courses",
+    "pdfUrl": "https://drive.google.com/file/d/1M4mxr-ALKSfwQ7tsYALWW0H7QUAfOFxx/view?usp=sharing",
+    "credentialUrl": "https://codepolitan.com/c/T8BU29C",
+    "image": "/assets/images/certificates/cert-javascript-dasar.jpg"
+  },
+  {
+    "id": "cert-laravel-web-programmer",
+    "title": "Training Program: Laravel Web Programmer",
+    "issuer": "Telkom Digiup",
+    "issueDate": "2024-12-27",
+    "category": "Bootcamps & Courses",
+    "pdfUrl": "https://drive.google.com/file/d/1M4mxr-ALKSfwQ7tsYALWW0H7QUAfOFxx/view?usp=sharing",
+    "credentialUrl": "https://codepolitan.com/c/T8BU29C",
+    "image": "/assets/images/certificates/cert-javascript-dasar.jpg"
+  },
 ]

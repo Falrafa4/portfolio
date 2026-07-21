@@ -1,10 +1,39 @@
-import { ExternalLink, Calendar, Award } from 'lucide-react';
+import { ExternalLink, Calendar, Award, Download } from 'lucide-react';
 
 export default function CertificateCard({ certificate }) {
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
   };
+
+  const getDownloadUrl = (url) => {
+    if (!url) return null;
+    
+    // Check if it's a Google Drive link
+    if (url.includes('drive.google.com')) {
+      let fileId = null;
+      
+      // Match /file/d/FILE_ID/...
+      const fileIdMatch = url.match(/\/file\/d\/([a-zA-Z0-9_-]+)/);
+      if (fileIdMatch && fileIdMatch[1]) {
+        fileId = fileIdMatch[1];
+      } else {
+        // Match ?id=FILE_ID
+        const idMatch = url.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+        if (idMatch && idMatch[1]) {
+          fileId = idMatch[1];
+        }
+      }
+
+      if (fileId) {
+        return `https://drive.google.com/uc?export=download&id=${fileId}`;
+      }
+    }
+    
+    return url; // Return original if not matched
+  };
+
+  const downloadUrl = getDownloadUrl(certificate.pdfUrl);
 
   return (
     <div className="group flex flex-col bg-surface border border-border rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:border-primary/50 hover:bg-black/10 dark:hover:bg-white/10 transition-all select-none">
@@ -34,23 +63,37 @@ export default function CertificateCard({ certificate }) {
           <span className="font-semibold text-text-main">{certificate.issuer}</span>
         </div>
 
-        <div className="flex items-center justify-between mt-auto pt-2 border-t border-border/50">
+        <div className="flex flex-wrap items-center justify-between gap-2 mt-auto pt-2 border-t border-border/50">
           <span className="flex items-center gap-1 text-xs text-text-muted font-mono">
             <Calendar size={12} />
             {formatDate(certificate.issueDate)}
           </span>
 
-          {certificate.credentialUrl && (
-            <a
-              href={certificate.credentialUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:text-primary-hover hover:underline transition-colors"
-              aria-label={`Verify credential for ${certificate.title}`}
-            >
-              Verify <ExternalLink size={12} />
-            </a>
-          )}
+          <div className="flex flex-wrap items-center gap-3 ml-auto">
+            {downloadUrl && (
+              <a
+                href={downloadUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:text-primary-hover hover:underline transition-colors"
+                aria-label={`Download PDF certificate for ${certificate.title}`}
+              >
+                Download PDF <Download size={12} />
+              </a>
+            )}
+
+            {certificate.credentialUrl && (
+              <a
+                href={certificate.credentialUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:text-primary-hover hover:underline transition-colors"
+                aria-label={`Verify credential for ${certificate.title}`}
+              >
+                Verify <ExternalLink size={12} />
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </div>

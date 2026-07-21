@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useSearch } from '../../hooks/useSearch';
 import CertificateCard from '../../components/cards/CertificateCard';
@@ -21,13 +21,34 @@ const itemVariants = {
   show: { opacity: 1, y: 0, transition: { duration: 0.22, ease: [0.4, 0, 0.2, 1] } }
 };
 
+const allCategory = 'All';
+const defaultCategories = [
+  'Bootcamps & Courses',
+  'Competition Participation',
+  'Seminars & Workshops'
+];
+
 export default function Certificates() {
   const { searchQuery, setSearchQuery } = useSearch();
+  const [activeCategory, setActiveCategory] = useState(allCategory);
+
+  const categories = useMemo(() => {
+    const dataCategories = certificatesData
+      .map((certificate) => certificate.category?.trim())
+      .filter(Boolean);
+
+    return [allCategory, ...new Set([...defaultCategories, ...dataCategories])];
+  }, []);
 
   const filteredAndSortedCertificates = useMemo(() => {
     let result = [...certificatesData];
 
-    // 1. Search Filter
+    // 1. Category Filter
+    if (activeCategory !== allCategory) {
+      result = result.filter((cert) => cert.category === activeCategory);
+    }
+
+    // 2. Search Filter
     if (searchQuery.trim() !== '') {
       const query = searchQuery.toLowerCase().trim();
       result = result.filter((cert) => {
@@ -37,13 +58,9 @@ export default function Certificates() {
       });
     }
 
-    // 2. Sort: Newest first (by issueDate)
+    // 3. Sort: Newest first (by issueDate)
     return result.sort((a, b) => new Date(b.issueDate) - new Date(a.issueDate));
-  }, [searchQuery]);
-
-  const handleResetSearch = () => {
-    setSearchQuery('');
-  };
+  }, [activeCategory, searchQuery]);
 
   return (
     <PageTransition>
@@ -66,20 +83,53 @@ export default function Certificates() {
             </p>
           </div>
           
-          {searchQuery && (
+          {(searchQuery || activeCategory !== allCategory) && (
             <div className="text-xs text-text-muted self-end sm:self-center font-mono">
               Showing {filteredAndSortedCertificates.length} of {certificatesData.length} certificates
             </div>
           )}
         </div>
 
+        {/* Category Filters */}
+        <div className="mb-6 overflow-x-auto pb-1" role="tablist" aria-label="Filter certificates by category">
+          <div className="flex min-w-max gap-2">
+            {categories.map((category) => {
+              const isActive = activeCategory === category;
+
+              return (
+                <button
+                  key={category}
+                  type="button"
+                  role="tab"
+                  aria-selected={isActive}
+                  onClick={() => setActiveCategory(category)}
+                  className={`rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
+                    isActive
+                      ? 'border-primary bg-primary text-white'
+                      : 'border-border bg-surface text-text-muted hover:border-primary/50 hover:text-primary'
+                  }`}
+                >
+                  {category}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
         {/* Main Grid or Empty State */}
         {filteredAndSortedCertificates.length === 0 ? (
           <EmptyState
-            title="No certificates match your search"
-            message={`We couldn't find any certificates matching "${searchQuery}". Try searching by credential name or issuer.`}
-            actionLabel="Clear Search"
-            onAction={handleResetSearch}
+            title="No certificates match your filters"
+            message={
+              searchQuery
+                ? `We couldn't find any certificates matching "${searchQuery}" in ${activeCategory}. Try another search or category.`
+                : `There are no certificates in ${activeCategory} yet. Try another category.`
+            }
+            actionLabel={searchQuery ? 'Clear Search' : 'Show All'}
+            onAction={() => {
+              setSearchQuery('');
+              setActiveCategory(allCategory);
+            }}
           />
         ) : (
           <motion.div
