@@ -1,31 +1,202 @@
 [
   {
-    "id": "cert-cyber-security-awareness",
+    "id": "cyber-security-awareness",
     "title": "Cyber Security Awareness Training",
     "issuer": "Yayasan Pendidikan Telkom",
     "issueDate": "2024-07-02",
     "category": "Bootcamps & Courses",
     "pdfUrl": "https://drive.google.com/file/d/1n9Lf3bkbV5NNTg-t6GgJtWtd0NhAABuG/view?usp=sharing",
-    "image": "/assets/images/certificates/cert-cyber-security-awareness.jpg"
+    "image": "/assets/images/certificates/cyber-security-awareness.webp"
   },
   {
-    "id": "cert-javascript-dasar",
+    "id": "javascript-dasar",
     "title": "Basic Javascript Course",
     "issuer": "Codepolitan",
     "issueDate": "2024-12-27",
     "category": "Bootcamps & Courses",
     "pdfUrl": "https://drive.google.com/file/d/1M4mxr-ALKSfwQ7tsYALWW0H7QUAfOFxx/view?usp=sharing",
     "credentialUrl": "https://codepolitan.com/c/T8BU29C",
-    "image": "/assets/images/certificates/cert-javascript-dasar.jpg"
+    "image": "/assets/images/certificates/javascript-dasar.webp"
   },
   {
-    "id": "cert-laravel-web-programmer",
+    "id": "laravel-web-programmer",
     "title": "Training Program: Laravel Web Programmer",
     "issuer": "Telkom Digiup",
     "issueDate": "2024-12-27",
     "category": "Bootcamps & Courses",
     "pdfUrl": "https://drive.google.com/file/d/1M4mxr-ALKSfwQ7tsYALWW0H7QUAfOFxx/view?usp=sharing",
     "credentialUrl": "https://codepolitan.com/c/T8BU29C",
-    "image": "/assets/images/certificates/cert-javascript-dasar.jpg"
+    "image": "/assets/images/certificates/javascript-dasar.webp"
+  },
+  {
+    "id": "azure-ai-fundamentals",
+    "title": "Preparation Course for Azure AI Fundamentals (AI-900)",
+    "issuer": "Microsoft Learn",
+    "issueDate": "2025-10-24",
+    "category": "Bootcamps & Courses",
+    "pdfUrl": "https://drive.google.com/file/d/1qdNPPo69gwNmcT6qNP2NbOzw5HJKy1CN/view?usp=sharing",
+    "credentialUrl": "",
+    "image": "/assets/images/certificates/azure-ai-fundamentals.webp"
+  },
+  {
+    "id": "building-web-with-reactjs",
+    "title": "Building Web Application Frontend with ReactJS",
+    "issuer": "Udemy Course - BISA AI Academy",
+    "issueDate": "2026-03-23",
+    "category": "Bootcamps & Courses",
+    "pdfUrl": "https://drive.google.com/file/d/1Gl4FqQnrXt29IjuF_se1tqS3OlLKBWg3/view?usp=sharing",
+    "credentialUrl": "",
+    "image": "/assets/images/certificates/building-web-with-reactjs.webp"
+  },
+  {
+    "id": "computational-thinking-logical-thinking-to-solve-problems",
+    "title": "Computational Thinking: Logical Thinking to Solve Problems",
+    "issuer": "Digitalent Komdigi",
+    "issueDate": "2025-04-24",
+    "category": "Bootcamps & Courses",
+    "pdfUrl": "https://drive.google.com/file/d/11yAo4oZEj_-eyGc7OTsZrnvg_EvUTbIz/view?usp=sharing",
+    "credentialUrl": "",
+    "image": "/assets/images/certificates/computational-thinking.webp"
+  },
+  {
+    "id": "web-design-development-with-python",
+    "title": "Web Design & Development with Python",
+    "issuer": "Digitalent Komdigi",
+    "issueDate": "2025-05-02",
+    "category": "Bootcamps & Courses",
+    "pdfUrl": "https://drive.google.com/file/d/180sKudgXvTSnu0QEjxRsLZXhhXNZt7RF/view?usp=sharing",
+    "credentialUrl": "",
+    "image": "/assets/images/certificates/web-design-development-with-python.webp"
+  },
+  {
+    "id": "reactjs-beginner-to-intermediate",
+    "title": "React.js : Beginner to Intermediate",
+    "issuer": "Udemy Course - Programmer Zaman Now",
+    "issueDate": "2026-06-27",
+    "category": "Bootcamps & Courses",
+    "pdfUrl": "https://drive.google.com/file/d/1Gd5DIKdQ4B_t_h1yygvD6va8sCIhJdwI/view?usp=sharing",
+    "credentialUrl": "",
+    "image": "/assets/images/certificates/reactjs-beginner-to-intermediate.webp"
+  },
+  {
+    "id": "fundamental-of-assistant-web-developer",
+    "title": "Fundamental of Assistant Web Developer - Nasional Digital Talent Academy",
+    "issuer": "Digitalent Komdigi",
+    "issueDate": "2026-07-04",
+    "category": "Bootcamps & Courses",
+    "pdfUrl": "https://drive.google.com/file/d/1Ruq2NZRFlW2GTk211tJnu0qY-TMpAfTS/view?usp=sharing",
+    "credentialUrl": "",
+    "image": "/assets/images/certificates/fundamental-of-assistant-web-developer.webp"
+  },
+
+  {
+    "id": "invofest-2024",
+    "title": "Invofest 2024 - Web Design",
+    "issuer": "Politeknik Harapan Bersama",
+    "issueDate": "2024-10-24",
+    "category": "Competition Participation",
+    "pdfUrl": "https://drive.google.com/file/d/1KzLfxdSp-rrE4AC7kQ8fvMrNUN2Qkmi9/view?usp=sharing",
+    "credentialUrl": "",
+    "image": "/assets/images/certificates/invofest-2025.webp"
+  },
+  {
+    "id": "ico-2025",
+    "title": "International Code Olympiad 2025 - Web Development",
+    "issuer": "Codingbee Academy",
+    "issueDate": "2025-07-20",
+    "category": "Competition Participation",
+    "pdfUrl": "https://drive.google.com/file/d/1UdeAgLcY745Z73rNV_TEr-Xug1QIw-Zh/view?usp=sharing",
+    "credentialUrl": "",
+    "image": "/assets/images/certificates/ico-2025.webp"
+  },
+  {
+    "id": "fitcom-3",
+    "title": "FITCOM 3.0 - Web Programming",
+    "issuer": "Universitas Dinamika",
+    "issueDate": "2025-10-23",
+    "category": "Competition Participation",
+    "pdfUrl": "https://drive.google.com/file/d/1ArcJQ-h8-eAg20NT3x-Q3Xoug06gIxOh/view?usp=sharing",
+    "credentialUrl": "",
+    "image": "/assets/images/certificates/fitcom-3.webp"
+  },
+  {
+    "id": "compfest-17",
+    "title": "COMPFEST 17 - Capture The Flag (CTF)",
+    "issuer": "Compfest",
+    "issueDate": "2025-12-17",
+    "category": "Competition Participation",
+    "pdfUrl": "https://drive.google.com/file/d/1qogRUyjAyTidNOajI86CY4P2Bu-synhc/view?usp=sharing",
+    "credentialUrl": "",
+    "image": "/assets/images/certificates/compfest-17.webp"
+  },
+  {
+    "id": "jhic-1",
+    "title": "JHIC 2025 - Web development",
+    "issuer": "Jagoan Hosting",
+    "issueDate": "2025-11-21",
+    "category": "Competition Participation",
+    "pdfUrl": "https://drive.google.com/file/d/14NXiEhu0T92ZSWX6vBscK43KQlEPdQo8/view?usp=sharing",
+    "credentialUrl": "",
+    "image": "/assets/images/certificates/jhic-1.webp"
+  },
+  {
+    "id": "invofest-2025",
+    "title": "Invofest 2025 - Web Design",
+    "issuer": "Politeknik Harapan Bersama",
+    "issueDate": "2025-11-27",
+    "category": "Competition Participation",
+    "pdfUrl": "https://drive.google.com/file/d/1KzLfxdSp-rrE4AC7kQ8fvMrNUN2Qkmi9/view?usp=sharing",
+    "credentialUrl": "",
+    "image": "/assets/images/certificates/invofest-2025.webp"
+  },
+  {
+    "id": "jcc-2025",
+    "title": "Jatim Cybersecurity Competition 2025",
+    "issuer": "Dinas Komunikasi dan Informatika Provinsi Jawa Timur",
+    "issueDate": "2025-12-01",
+    "category": "Competition Participation",
+    "pdfUrl": "https://drive.google.com/file/d/1XdA-1BIOaD1lY5eQG_TMs8VYMkfoVzin/view?usp=sharing",
+    "credentialUrl": "",
+    "image": "/assets/images/certificates/jcc-2025.webp"
+  },
+  {
+    "id": "lks-sda-2026",
+    "title": "LKS Web Technologies 2026 - Sidoarjo",
+    "issuer": "Pusat Prestasi Nasional",
+    "issueDate": "2026-02-11",
+    "category": "Competition Participation",
+    "pdfUrl": "https://drive.google.com/file/d/1eJysXb9nLEeJsbNc8gIP0-vtQbx8jvd5/view?usp=sharing",
+    "credentialUrl": "",
+    "image": "/assets/images/certificates/lks-2026.webp"
+  },
+  {
+    "id": "lks-jatim-2026",
+    "title": "LKS Web Technologies 2026 - East Java",
+    "issuer": "Pusat Prestasi Nasional",
+    "issueDate": "2026-04-10",
+    "category": "Competition Participation",
+    "pdfUrl": "https://drive.google.com/file/d/1XdA-1BIOaD1lY5eQG_TMs8VYMkfoVzin/view?usp=sharing",
+    "credentialUrl": "",
+    "image": "/assets/images/certificates/lks-2026.webp"
+  },
+  {
+    "id": "sefest-2026",
+    "title": "SEFEST 2026 - Web Design",
+    "issuer": "Telkom University Surabaya",
+    "issueDate": "2026-05-18",
+    "category": "Competition Participation",
+    "pdfUrl": "https://drive.google.com/file/d/1tPSyL18Cy2DdNMdCoV4bzRv0R25ufuTQ/view?usp=sharing",
+    "credentialUrl": "",
+    "image": "/assets/images/certificates/sefest-2026.webp"
+  },
+  {
+    "id": "ukl-2",
+    "title": "Uji Kenaikan Level 2 - SIJA",
+    "issuer": "SMK Telkom Sidoarjo",
+    "issueDate": "2026-06-09",
+    "category": "Competition Participation",
+    "pdfUrl": "https://drive.google.com/file/d/1LMP_qEpkOC_QxvMw5a2IEQpcbXNjtdbv/view?usp=sharing",
+    "credentialUrl": "",
+    "image": "/assets/images/certificates/ukl-2.webp"
   }
 ]

@@ -1,7 +1,7 @@
 {
   "portfolioTitle": "Naufal's Portfolio",
   "defaultTheme": "light",
-  "enableBootAnimation": true,
+  "enableBootAnimation": false,
   "enableSearch": true,
   "enableThemeToggle": true
 }
