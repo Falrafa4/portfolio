@@ -15,11 +15,11 @@ export default function BentoCard({
       whileHover={interactive ? { y: -4 } : undefined}
       transition={{ duration: 0.2, ease: 'easeOut' }}
       className={clsx(
-        'group relative overflow-hidden rounded-[1.6rem] border border-border/80 bg-surface/80 p-5 shadow-[0_18px_45px_-30px_rgba(15,23,42,0.55)] backdrop-blur-xl sm:p-6',
+        'group relative overflow-hidden border-2 border-dashed dashed border-border bg-surface/80 p-5 backdrop-blur-xl sm:p-6',
         'before:pointer-events-none before:absolute before:inset-0 before:bg-linear-to-br before:from-white/12 before:to-transparent before:opacity-0 before:transition-opacity before:duration-300',
-        interactive && 'cursor-pointer hover:border-primary/45 hover:shadow-[0_24px_55px_-30px_rgba(37,99,235,0.45)]',
+        interactive && 'cursor-pointer hover:border-primary/45',
         interactive && 'hover:before:opacity-100',
-        accent && 'border-primary/30 bg-primary/[0.08]',
+        accent && 'border-primary/30 bg-primary/8',
         className,
       )}
     >

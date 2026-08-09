@@ -21,6 +21,7 @@ import experiencesData from '../../data/experiences.json';
 import skillsData from '../../data/skills.json';
 import techStackData from '../../data/tech-stack.json';
 import contactsData from '../../data/contacts.json';
+import Button from '../../components/ui/Button';
 
 const socialLinks = [
   { label: 'GitHub', href: contactsData.github, icon: Code2 },
@@ -88,7 +89,7 @@ export default function Home() {
             <div className="flex h-full flex-col justify-between gap-8">
               <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:items-start sm:text-left">
                 <div className="relative shrink-0">
-                  <div className="absolute -inset-2 rounded-[1.5rem] bg-primary/20 blur-xl" />
+                  <div className="absolute -inset-2 rounded-xl bg-primary/20 blur-xl" />
                   <img
                     src={profileData.profileImage}
                     alt={profileData.fullName}
@@ -107,7 +108,7 @@ export default function Home() {
             </div>
           </BentoCard>
 
-          <BentoCard className="lg:col-span-1" eyebrow="Based in" title={profileData.location}>
+          <BentoCard className="lg:col-span-1" eyebrow="Based in" title={profileData.location} interactive>
             <div className="flex h-full items-end justify-between gap-3">
               <MapPin className="text-primary" size={34} strokeWidth={1.5} />
               <span className="text-right text-xs leading-5 text-text-muted">East Java<br />Indonesia</span>
@@ -199,10 +200,10 @@ export default function Home() {
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div className="flex items-center gap-3 text-sm text-text-muted"><Terminal size={18} className="text-primary" /> Available for a conversation</div>
               <div className="flex gap-2">
-                <Link to="/contact" className="inline-flex items-center gap-2 rounded-xl bg-primary px-4 py-2.5 text-sm font-bold text-white transition hover:bg-primary-hover">
+                <Button target='/contact'>
                   Contact me <ArrowUpRight size={16} />
-                </Link>
-                <a href={contactsData.resumeUrl} className="inline-flex items-center justify-center rounded-xl border border-border px-3 py-2.5 text-text-muted transition hover:border-primary/50 hover:text-primary" aria-label="Download resume">
+                </Button>
+                <a href={contactsData.resumeUrl} className="inline-flex items-center justify-center rounded border-2 border-dashed border-border px-3 py-2.5 text-text-muted transition hover:border-primary/50 hover:text-primary" aria-label="Download resume">
                   <Download size={16} />
                 </a>
               </div>
