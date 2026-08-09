@@ -15,10 +15,10 @@
   },
   {
     "id": "ts-3",
-    "name": "Node.js",
-    "category": "Runtime",
+    "name": "Laravel",
+    "category": "Backend",
     "icon": "Terminal",
-    "officialWebsite": "https://nodejs.org"
+    "officialWebsite": "https://laravel.com"
   },
   {
     "id": "ts-4",

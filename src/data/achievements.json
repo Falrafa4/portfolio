@@ -1,20 +1,29 @@
 [
   {
-    "id": "achieve-national-hackathon",
-    "title": "National Tech Solutions Hackathon",
-    "organizer": "National Tech Association",
-    "year": "2024",
-    "achievement": "1st Place Winner",
-    "description": "Developed a decentralized, offline-first IoT mesh networks monitoring client inside a 36-hour sprint. Won first place among 60+ participating teams.",
-    "image": "/assets/images/achievements/hackathon-trophy.jpg"
+    "id": "ico-2025",
+    "title": "International Code Olympiad 2025 - Web Development",
+    "organizer": "Codingbee Academy",
+    "year": "2025",
+    "achievement": "3rd Place Winner",
+    "description": "Secured 3rd place in the International Code Olympiad 2025 Web Development track, showcasing computational logic and frontend development.",
+    "image": "/assets/images/achievements/ico-2025.webp"
   },
   {
-    "id": "achieve-open-source-contrib",
-    "title": "Hacktoberfest Top Contributor",
-    "organizer": "DigitalOcean & Partners",
-    "year": "2023",
-    "achievement": "Top Contributor",
-    "description": "Contributed verified production fixes and modular feature components to major open-source tools, including React component suites.",
-    "image": ""
+    "id": "lks-sda-2026",
+    "title": "LKS Web Technologies 2026 - Sidoarjo",
+    "organizer": "Pusat Prestasi Nasional",
+    "year": "2026",
+    "achievement": "1st Place Winner",
+    "description": "Won 1st place in the LKS Web Technologies competition at Sidoarjo regency level, demonstrating expertise in frontend and backend web development.",
+    "image": "/assets/images/achievements/lks-sda-2026.webp"
+  },
+  {
+    "id": "lks-jatim-2026",
+    "title": "LKS Web Technologies 2026 - East Java",
+    "organizer": "Pusat Prestasi Nasional",
+    "year": "2026",
+    "achievement": "2nd Place Winner",
+    "description": "Achieved 2nd place in LKS Web Technologies at the East Java provincial level among top student developers representing their regencies.",
+    "image": "/assets/images/achievements/lks-jatim-2026.webp"
   }
 ]
