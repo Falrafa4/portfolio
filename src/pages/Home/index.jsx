@@ -101,11 +101,11 @@ export default function Home() {
                   <img
                     src={profileData.profileImage}
                     alt={profileData.fullName}
-                    className="relative h-28 w-28 rounded-[1.35rem] border border-white/30 object-cover shadow-xl sm:h-36 sm:w-36"
+                    className="relative h-28 w-28 rounded-xl border border-white/30 object-cover sm:h-36 sm:w-36"
                   />
                 </div>
                 <div>
-                  <h2 className="max-w-xl text-3xl font-black leading-[0.95] tracking-lighter text-text-main sm:text-4xl">
+                  <h2 className="max-w-60 text-3xl font-black leading-[0.95] tracking-lighter text-text-main sm:text-4xl">
                     {profileData.fullName}
                   </h2>
                   <p className="mt-4 text-base font-semibold text-primary">{profileData.professionalTitle}</p>
