@@ -33,6 +33,7 @@ const techIconMap = {
   'inertia.js': '/tech-icons/inertia.svg',
   inertiajs: '/tech-icons/inertia.svg',
   inertia: '/tech-icons/inertia.svg',
+  capacitor: '/tech-icons/capacitor.svg',
 
   // Lucide legacy keys mapping to SVG icons
   code: '/tech-icons/react.svg',

@@ -88,7 +88,7 @@
     "thumbnail": "/assets/images/projects/aturuang.webp",
     "technologies": [
       "HTML",
-      "Tailwind CSS",
+      "Tailwind",
       "JavaScript"
     ],
     "features": [
@@ -165,7 +165,7 @@
     "thumbnail": "/assets/images/projects/spentaru-archive.webp",
     "technologies": [
       "React.js",
-      "Tailwind CSS",
+      "Tailwind",
       "JavaScript"
     ],
     "features": [
@@ -216,7 +216,7 @@
     "thumbnail": "/assets/images/projects/samling-ai.webp",
     "technologies": [
       "React.js",
-      "Tailwind CSS",
+      "Tailwind",
       "FastAPI"
     ],
     "features": [
@@ -242,7 +242,7 @@
     "thumbnail": "/assets/images/projects/samling-ai-driver.webp",
     "technologies": [
       "React.js",
-      "Tailwind CSS",
+      "Tailwind",
       "Capacitor",
       "Android Studio (via Github Actions)"
     ],
