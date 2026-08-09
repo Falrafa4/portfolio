@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useSearch } from '../../hooks/useSearch';
 import ProjectCard from '../../components/cards/ProjectCard';
@@ -21,13 +21,29 @@ const itemVariants = {
   show: { opacity: 1, y: 0, transition: { duration: 0.22, ease: [0.4, 0, 0.2, 1] } }
 };
 
+const allCategory = 'All';
+
 export default function Projects() {
   const { searchQuery, setSearchQuery } = useSearch();
+  const [activeCategory, setActiveCategory] = useState(allCategory);
+
+  const categories = useMemo(() => {
+    const dataCategories = projectsData
+      .map((project) => project.category?.trim())
+      .filter(Boolean);
+
+    return [allCategory, ...new Set(dataCategories)];
+  }, []);
 
   const filteredAndSortedProjects = useMemo(() => {
     let result = [...projectsData];
 
-    // 1. Search Filter
+    // 1. Category Filter
+    if (activeCategory !== allCategory) {
+      result = result.filter((project) => project.category === activeCategory);
+    }
+
+    // 2. Search Filter
     if (searchQuery.trim() !== '') {
       const query = searchQuery.toLowerCase().trim();
       result = result.filter((project) => {
@@ -45,21 +61,22 @@ export default function Projects() {
       });
     }
 
-    // 2. Sort: Featured first
+    // 3. Sort: Featured first
     return result.sort((a, b) => {
       if (a.featured === b.featured) return 0;
       return a.featured ? -1 : 1;
     });
-  }, [searchQuery]);
+  }, [activeCategory, searchQuery]);
 
-  const handleResetSearch = () => {
+  const handleResetFilters = () => {
     setSearchQuery('');
+    setActiveCategory(allCategory);
   };
 
   return (
     <PageTransition>
       <div className="flex flex-col h-full">
-        {/* Folder Header */}
+        {/* Header */}
         <div className="mb-6 border-b border-border pb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
             <h1 className="text-3xl font-bold text-text-main flex items-center gap-2">
@@ -70,20 +87,50 @@ export default function Projects() {
             </p>
           </div>
           
-          {searchQuery && (
+          {(searchQuery || activeCategory !== allCategory) && (
             <div className="text-xs text-text-muted self-end sm:self-center font-mono">
               Showing {filteredAndSortedProjects.length} of {projectsData.length} projects
             </div>
           )}
         </div>
 
+        {/* Category Filters */}
+        <div className="mb-6 overflow-x-auto pb-1" role="tablist" aria-label="Filter projects by category">
+          <div className="flex min-w-max gap-2">
+            {categories.map((category) => {
+              const isActive = activeCategory === category;
+
+              return (
+                <button
+                  key={category}
+                  type="button"
+                  role="tab"
+                  aria-selected={isActive}
+                  onClick={() => setActiveCategory(category)}
+                  className={`rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
+                    isActive
+                      ? 'border-primary bg-primary text-white'
+                      : 'border-border bg-surface text-text-muted hover:border-primary/50 hover:text-primary'
+                  }`}
+                >
+                  {category}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
         {/* Main Grid or Empty State */}
         {filteredAndSortedProjects.length === 0 ? (
           <EmptyState
-            title="No projects match your search"
-            message={`We couldn't find any projects matching "${searchQuery}". Try using different keywords, technology names, or roles.`}
-            actionLabel="Clear Search"
-            onAction={handleResetSearch}
+            title="No projects match your filters"
+            message={
+              searchQuery
+                ? `We couldn't find any projects matching "${searchQuery}" in ${activeCategory}. Try another search or category.`
+                : `There are no projects in ${activeCategory} yet. Try another category.`
+            }
+            actionLabel={searchQuery ? 'Clear Search' : 'Show All'}
+            onAction={handleResetFilters}
           />
         ) : (
           <motion.div
