@@ -53,14 +53,7 @@ export default function Achievements() {
         {/* Folder Header */}
         <div className="mb-6 border-b border-border pb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
-            <h1 className="text-2xl font-bold text-text-main flex items-center gap-2">
-              <svg
-                className="w-7 h-7 text-primary"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" />
-              </svg>
+            <h1 className="text-3xl font-bold text-text-main flex items-center gap-2">
               Achievements
             </h1>
             <p className="text-text-muted mt-1 text-sm">

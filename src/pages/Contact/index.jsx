@@ -1,21 +1,15 @@
 import { Mail, FileText, Download, ExternalLink } from 'lucide-react';
 import contactsData from '../../data/contacts.json';
 import PageTransition from '../../components/common/PageTransition';
+import Button from '../../components/ui/Button';
 
 export default function Contact() {
   return (
     <PageTransition>
       <div className="max-w-3xl mx-auto pb-12">
-        {/* Folder Header */}
+        {/* Header */}
         <div className="mb-8 border-b border-border pb-4">
-          <h1 className="text-2xl font-bold text-text-main flex items-center gap-2">
-            <svg
-              className="w-7 h-7 text-primary"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" />
-            </svg>
+          <h1 className="text-3xl font-bold text-text-main flex items-center gap-2">
             Contact
           </h1>
           <p className="text-text-muted mt-1 text-sm">
@@ -32,7 +26,7 @@ export default function Contact() {
             {contactsData.email && (
               <a
                 href={`mailto:${contactsData.email}`}
-                className="flex items-center gap-4 p-4 bg-surface border border-border rounded-lg shadow-sm hover:shadow-md hover:border-primary/50 hover:bg-black/10 dark:hover:bg-white/10 transition-all select-none group"
+                className="flex items-center gap-4 p-4 bg-surface/80 border-2 border-dashed border-border backdrop-blur-xl transition-all hover:-translate-y-1 hover:border-primary/50 select-none group"
               >
                 <div className="p-3 bg-background rounded-md text-primary group-hover:bg-primary/10 transition-colors">
                   <Mail size={20} />
@@ -51,7 +45,7 @@ export default function Contact() {
                 href={contactsData.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-surface border border-border rounded-lg shadow-sm hover:shadow-md hover:border-primary/50 hover:bg-black/10 dark:hover:bg-white/10 transition-all select-none group"
+                className="flex items-center gap-4 p-4 bg-surface/80 border-2 border-dashed border-border backdrop-blur-xl transition-all hover:-translate-y-1 hover:border-primary/50 select-none group"
               >
                 <div className="p-3 bg-background rounded-md text-primary group-hover:bg-primary/10 transition-colors">
                   <svg className="w-5 h-5 fill-current text-text-main" viewBox="0 0 24 24">
@@ -72,7 +66,7 @@ export default function Contact() {
                 href={contactsData.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-surface border border-border rounded-lg shadow-sm hover:shadow-md hover:border-primary/50 hover:bg-black/10 dark:hover:bg-white/10 transition-all select-none group"
+                className="flex items-center gap-4 p-4 bg-surface/80 border-2 border-dashed border-border backdrop-blur-xl transition-all hover:-translate-y-1 hover:border-primary/50 select-none group"
               >
                 <div className="p-3 bg-background rounded-md text-primary group-hover:bg-primary/10 transition-colors">
                   <svg className="w-5 h-5 fill-current text-text-main" viewBox="0 0 24 24">
@@ -94,7 +88,7 @@ export default function Contact() {
 
             {/* Resume Card */}
             {contactsData.resumeUrl && (
-              <div className="p-6 bg-surface border border-border rounded-lg shadow-sm flex flex-col gap-4">
+              <div className="p-6 bg-surface/80 border-2 border-dashed border-border backdrop-blur-xl flex flex-col gap-4">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-primary/5 rounded-md text-primary">
                     <FileText size={24} />
@@ -107,14 +101,14 @@ export default function Contact() {
                   </div>
                 </div>
                 
-                <a
+                <Button
                   href={contactsData.resumeUrl}
-                  download
-                  className="mt-2 inline-flex items-center justify-center gap-2 w-full px-4 py-2.5 bg-primary hover:bg-primary-hover text-white text-sm font-semibold rounded-md shadow transition-colors select-none"
+                  variant="primary"
+                  className="mt-2 w-full"
                 >
                   <Download size={16} />
                   Download Resume
-                </a>
+                </Button>
               </div>
             )}
           </div>
