@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
 import clsx from 'clsx';
+import IconResolver from '../common/IconResolver';
 
 export default function ProjectCard({ project }) {
   const getStatusColor = (status) => {
@@ -72,8 +73,9 @@ export default function ProjectCard({ project }) {
           {project.technologies?.slice(0, 3).map((tech) => (
             <span
               key={tech}
-              className="rounded-lg border border-border bg-background px-2 py-1 font-mono text-xs text-text-muted"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-background px-2 py-1 font-mono text-xs text-text-muted"
             >
+              <IconResolver name={tech} size={13} />
               {tech}
             </span>
           ))}

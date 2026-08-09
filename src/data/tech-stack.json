@@ -3,28 +3,28 @@
     "id": "ts-1",
     "name": "React",
     "category": "Library",
-    "icon": "Code",
+    "icon": "/tech-icons/react.svg",
     "officialWebsite": "https://react.dev"
   },
   {
     "id": "ts-2",
     "name": "Tailwind CSS",
     "category": "Framework",
-    "icon": "Palette",
+    "icon": "/tech-icons/tailwindcss.svg",
     "officialWebsite": "https://tailwindcss.com"
   },
   {
     "id": "ts-3",
     "name": "Laravel",
     "category": "Backend",
-    "icon": "Terminal",
+    "icon": "/tech-icons/laravel.svg",
     "officialWebsite": "https://laravel.com"
   },
   {
     "id": "ts-4",
     "name": "PostgreSQL",
     "category": "Database",
-    "icon": "Database",
+    "icon": "/tech-icons/postgresql.svg",
     "officialWebsite": "https://postgresql.org"
   }
 ]

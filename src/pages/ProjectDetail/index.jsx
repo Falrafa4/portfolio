@@ -5,6 +5,7 @@ import projectsData from '../../data/projects.json';
 import EmptyState from '../../components/common/EmptyState';
 import PageTransition from '../../components/common/PageTransition';
 import Button from '../../components/ui/Button';
+import IconResolver from '../../components/common/IconResolver';
 
 export default function ProjectDetail() {
   const { slug } = useParams();
@@ -130,8 +131,9 @@ export default function ProjectDetail() {
               {project.technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="px-3 py-1 bg-background border border-border text-text-muted rounded-md text-sm font-mono"
+                  className="inline-flex items-center gap-2 px-3 py-1.5 bg-background border border-border text-text-muted rounded-md text-sm font-mono"
                 >
+                  <IconResolver name={tech} size={16} />
                   {tech}
                 </span>
               ))}
