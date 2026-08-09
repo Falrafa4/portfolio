@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { Link } from 'react-router';
+import { motion } from 'framer-motion';
 import {
   ArrowUpRight,
   BriefcaseBusiness,
@@ -51,9 +52,16 @@ export default function Home() {
     );
   }, [query]);
 
+  const { row1Skills, row2Skills } = useMemo(() => {
+    const midpoint = Math.ceil(filteredSkills.length / 2);
+    return {
+      row1Skills: filteredSkills.slice(0, midpoint),
+      row2Skills: filteredSkills.slice(midpoint),
+    };
+  }, [filteredSkills]);
+
   const featuredProject = projectsData.find((project) => project.featured) || projectsData[0];
   const currentExperience = experiencesData.find((experience) => experience.current) || experiencesData[0];
-  const visibleSkills = filteredSkills.slice(0, 6);
 
   if (query && filteredSkills.length === 0 && filteredTechStack.length === 0) {
     return (
@@ -186,13 +194,44 @@ export default function Home() {
           </BentoCard>
 
           <BentoCard className="lg:col-span-2" eyebrow="Capabilities" title="What I bring to a team">
-            <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
-              {visibleSkills.map((skill) => (
-                <div key={skill.id} className="flex items-center gap-2 rounded-xl border border-border/70 bg-background/50 px-3 py-2.5 text-xs text-text-muted">
-                  <Code2 size={14} className="shrink-0 text-primary" />
-                  <span className="truncate">{skill.name}</span>
-                </div>
-              ))}
+            <div className="flex flex-col gap-2.5 overflow-hidden py-1">
+              {/* Row 1: Right to Left */}
+              <div className="group relative flex overflow-hidden">
+                <motion.div
+                  className="flex min-w-max gap-2"
+                  animate={{ x: ['0%', '-50%'] }}
+                  transition={{ ease: 'linear', duration: 25, repeat: Infinity }}
+                >
+                  {[...row1Skills, ...row1Skills].map((skill, idx) => (
+                    <div
+                      key={`r1-${skill.id}-${idx}`}
+                      className="flex items-center gap-2 rounded-xl border border-border/70 bg-background/70 px-3 py-2 text-xs font-medium text-text-muted transition-all hover:border-primary/50 hover:text-text-main shrink-0 select-none"
+                    >
+                      <IconResolver name={skill.icon || skill.name} size={15} />
+                      <span className="whitespace-nowrap">{skill.name}</span>
+                    </div>
+                  ))}
+                </motion.div>
+              </div>
+
+              {/* Row 2: Left to Right */}
+              <div className="group relative flex overflow-hidden">
+                <motion.div
+                  className="flex min-w-max gap-2"
+                  animate={{ x: ['-50%', '0%'] }}
+                  transition={{ ease: 'linear', duration: 25, repeat: Infinity }}
+                >
+                  {[...row2Skills, ...row2Skills].map((skill, idx) => (
+                    <div
+                      key={`r2-${skill.id}-${idx}`}
+                      className="flex items-center gap-2 rounded-xl border border-border/70 bg-background/70 px-3 py-2 text-xs font-medium text-text-muted transition-all hover:border-primary/50 hover:text-text-main shrink-0 select-none"
+                    >
+                      <IconResolver name={skill.icon || skill.name} size={15} />
+                      <span className="whitespace-nowrap">{skill.name}</span>
+                    </div>
+                  ))}
+                </motion.div>
+              </div>
             </div>
           </BentoCard>
 
