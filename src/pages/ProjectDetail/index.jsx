@@ -89,7 +89,7 @@ export default function ProjectDetail() {
       <div className="flex flex-col gap-8">
         {/* Project Image */}
         {project.thumbnail && (
-          <div className="aspect-video w-full rounded-xl overflow-hidden border border-border bg-background shadow-sm">
+          <div className="aspect-video w-full overflow-hidden border-2 border-border border-dashed hover:border-primary/50 transition bg-background">
             <img
               src={project.thumbnail}
               alt={project.title}
@@ -99,7 +99,7 @@ export default function ProjectDetail() {
         )}
 
         {/* Description */}
-        <div className="bg-surface border border-border rounded-xl p-6 shadow-sm">
+        <div className="bg-surface border-2 border-border border-dashed hover:border-primary/50 transition p-6">
           <h2 className="text-lg font-bold text-text-main mb-3">Project Overview</h2>
           <p className="text-text-muted leading-relaxed text-sm whitespace-pre-line">
             {project.description}
@@ -108,12 +108,12 @@ export default function ProjectDetail() {
 
         {/* Features list */}
         {project.features && project.features.length > 0 && (
-          <div className="bg-surface border border-border rounded-xl p-6 shadow-sm">
+          <div className="bg-surface border-2 border-border border-dashed hover:border-primary/50 transition p-6">
             <h2 className="text-lg font-bold text-text-main mb-4">Key Features</h2>
             <ul className="space-y-3">
               {project.features.map((feature, index) => (
                 <li key={index} className="flex items-start gap-2.5 text-sm text-text-muted leading-relaxed">
-                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
                   <span>{feature}</span>
                 </li>
               ))}
@@ -123,7 +123,7 @@ export default function ProjectDetail() {
 
         {/* Technologies list */}
         {project.technologies && project.technologies.length > 0 && (
-          <div className="bg-surface border border-border rounded-xl p-6 shadow-sm">
+          <div className="bg-surface border-2 border-border border-dashed hover:border-primary/50 transition p-6">
             <h2 className="text-lg font-bold text-text-main mb-4">Technologies Used</h2>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech) => (
