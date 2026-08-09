@@ -19,7 +19,7 @@ export default function ProjectCard({ project }) {
   return (
     <Link
       to={`/projects/${project.slug}`}
-      className="group flex flex-col overflow-hidden border-2 border-dashed border-border bg-surface/80 backdrop-blur-xl transition-all hover:-translate-y-1 hover:border-primary/50  focus:outline-none focus:ring-2 focus:ring-primary select-none"
+      className="group relative flex flex-col overflow-hidden border-2 border-dashed border-border bg-surface/80 backdrop-blur-xl transition-all hover:-translate-y-1 hover:border-primary/50 active:scale-[0.99] after:pointer-events-none after:absolute after:inset-0 after:bg-linear-to-br after:from-primary/10 after:via-transparent after:to-primary/5 after:opacity-0 hover:after:opacity-100 active:after:opacity-100 after:transition-opacity after:duration-300 focus:outline-none focus:ring-2 focus:ring-primary select-none"
     >
       {/* Thumbnail */}
         <div className="relative aspect-video w-full overflow-hidden border-b border-border/70 bg-background">

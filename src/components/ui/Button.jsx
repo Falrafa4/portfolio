@@ -18,7 +18,7 @@ export default function Button({
   const combinedClassName = className || classname;
 
   const baseStyles =
-    'inline-flex items-center justify-center gap-2 rounded transition-all duration-200 font-bold select-none cursor-pointer';
+    'relative overflow-hidden inline-flex items-center justify-center gap-2 rounded transition-all duration-200 font-bold select-none cursor-pointer active:scale-[0.97] after:pointer-events-none after:absolute after:inset-0 after:bg-white/10 after:opacity-0 hover:after:opacity-100 active:after:opacity-100 after:transition-opacity after:duration-200';
 
   const variantStyles = {
     primary:

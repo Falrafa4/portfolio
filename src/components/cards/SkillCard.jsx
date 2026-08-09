@@ -2,7 +2,7 @@ import IconResolver from '../common/IconResolver';
 
 export default function SkillCard({ skill }) {
   return (
-    <div className="group flex min-h-36 flex-col items-center justify-center rounded-xl border border-border bg-surface p-4 text-center shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:bg-black/5 hover:shadow-md dark:hover:bg-white/5 active:-translate-y-0.5 active:border-primary/40 active:bg-black/5 active:shadow-md dark:active:bg-white/5 select-none">
+    <div className="group relative overflow-hidden flex min-h-36 flex-col items-center justify-center rounded-xl border border-border bg-surface p-4 text-center shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:bg-black/5 hover:shadow-md dark:hover:bg-white/5 active:scale-[0.97] active:-translate-y-0.5 active:border-primary/40 active:bg-black/5 active:shadow-md dark:active:bg-white/5 after:pointer-events-none after:absolute after:inset-0 after:bg-linear-to-br after:from-primary/10 after:via-transparent after:to-primary/5 after:opacity-0 hover:after:opacity-100 active:after:opacity-100 after:transition-opacity after:duration-300 select-none">
       <div className="mb-3 flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-background p-2.5 transition-transform group-hover:scale-105 group-active:scale-105">
         <IconResolver
           name={skill.icon || skill.name}

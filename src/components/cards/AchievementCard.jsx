@@ -2,7 +2,7 @@ import { Award, Calendar, Landmark } from 'lucide-react';
 
 export default function AchievementCard({ achievement }) {
   return (
-    <div className="group flex flex-col overflow-hidden border-2 border-dashed border-border bg-surface/80 backdrop-blur-xl transition-all hover:-translate-y-1 hover:border-primary/50 select-none">
+    <div className="group relative flex flex-col overflow-hidden border-2 border-dashed border-border bg-surface/80 backdrop-blur-xl transition-all hover:-translate-y-1 hover:border-primary/50 active:scale-[0.99] after:pointer-events-none after:absolute after:inset-0 after:bg-linear-to-br after:from-primary/10 after:via-transparent after:to-primary/5 after:opacity-0 hover:after:opacity-100 active:after:opacity-100 after:transition-opacity after:duration-300 select-none">
       {/* Thumbnail or Badge */}
       <div className="relative aspect-4/3 w-full overflow-hidden border-b border-border/70 bg-background flex items-center justify-center">
         {achievement.image ? (
