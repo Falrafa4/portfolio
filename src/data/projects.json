@@ -23,7 +23,7 @@
     "demoUrl": "",
     "role": "Fullstack Developer",
     "status": "Finished",
-    "featured": true
+    "featured": false
   },
   {
     "id": "kopi-iot",
@@ -49,7 +49,7 @@
     "demoUrl": "",
     "role": "Fullstack Developer",
     "status": "Finished",
-    "featured": true
+    "featured": false
   },
   {
     "id": "sidowaras",
@@ -73,7 +73,7 @@
     "demoUrl": "https://falrafa4.github.io/sidowaras/",
     "role": "Idea & Web Developer",
     "status": "Finished",
-    "featured": true
+    "featured": false
   },
   {
     "id": "aturuang",
@@ -97,7 +97,7 @@
     "demoUrl": "https://atur-uang-app.vercel.app/",
     "role": "Idea & Web Developer",
     "status": "Finished",
-    "featured": true
+    "featured": false
   },
   {
     "id": "movinfo",
@@ -122,7 +122,7 @@
     "demoUrl": "https://movie-list-programmer.vercel.app",
     "role": "Frontend Developer",
     "status": "Finished",
-    "featured": true
+    "featured": false
   },
   {
     "id": "the-news",
@@ -147,7 +147,7 @@
     "demoUrl": "https://news.naufalrafa.my.id",
     "role": "Frontend Developer",
     "status": "Finished",
-    "featured": true
+    "featured": false
   },
   {
     "id": "spentaru-archive",
@@ -172,7 +172,7 @@
     "demoUrl": "https://spentaru.naufalrafa.my.id",
     "role": "Frontend Developer",
     "status": "Finished",
-    "featured": true
+    "featured": false
   },
   {
     "id": "digitalance",
@@ -221,7 +221,7 @@
     "demoUrl": "https://samling-ai.vercel.app",
     "role": "Fullstack Developer",
     "status": "Finished",
-    "featured": true
+    "featured": false
   },
   {
     "id": "samling-ai-driver",
@@ -245,6 +245,6 @@
     "demoUrl": "https://drive.google.com/drive/folders/1Pbqi9ojAyeI9GozgPR58e8rYt9moCqns?usp=sharing",
     "role": "Fullstack Developer",
     "status": "Finished",
-    "featured": true
+    "featured": false
   }
 ]
