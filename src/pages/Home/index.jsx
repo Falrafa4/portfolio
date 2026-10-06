@@ -242,7 +242,7 @@ export default function Home() {
                 <Button target='/contact'>
                   Contact me <ArrowUpRight size={16} />
                 </Button>
-                <a href={contactsData.resumeUrl} className="inline-flex items-center justify-center rounded border-2 border-dashed border-border px-3 py-2.5 text-text-muted transition hover:border-primary/50 hover:text-primary" aria-label="Download resume">
+                <a href={contactsData.cvUrl} className="inline-flex items-center justify-center rounded border-2 border-dashed border-border px-3 py-2.5 text-text-muted transition hover:border-primary/50 hover:text-primary" aria-label="Download CV">
                   <Download size={16} />
                 </a>
               </div>

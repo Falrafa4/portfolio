@@ -86,8 +86,8 @@ export default function Contact() {
           <div className="flex flex-col gap-6">
             <h2 className="text-lg font-bold text-text-main">Documents</h2>
 
-            {/* Resume Card */}
-            {contactsData.resumeUrl && (
+            {/* CV Card */}
+            {contactsData.cvUrl && (
               <div className="p-6 bg-surface/80 border-2 border-dashed border-border backdrop-blur-xl flex flex-col gap-4">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-primary/5 rounded-md text-primary">
@@ -96,18 +96,18 @@ export default function Contact() {
                   <div>
                     <h3 className="text-sm font-semibold text-text-main">Curriculum Vitae</h3>
                     <p className="text-xs text-text-muted mt-1 leading-relaxed">
-                      Download my updated resume to view my complete academic background and job qualifications.
+                      Download my updated CV to view my complete academic background and job qualifications.
                     </p>
                   </div>
                 </div>
                 
                 <Button
-                  href={contactsData.resumeUrl}
+                  href={contactsData.cvUrl}
                   variant="primary"
                   className="mt-2 w-full"
                 >
                   <Download size={16} />
-                  Download Resume
+                  Download CV
                 </Button>
               </div>
             )}
