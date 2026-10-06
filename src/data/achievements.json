@@ -25,5 +25,14 @@
     "achievement": "2nd Place Winner",
     "description": "Achieved 2nd place in LKS Web Technologies at the East Java provincial level among top student developers representing their regencies.",
     "image": "/assets/images/achievements/lks-jatim-2026.webp"
+  },
+  {
+    "id": "ai-open-2026",
+    "title": "AI Open Innovation Challenge 2026",
+    "organizer": "President University",
+    "year": "2026",
+    "achievement": "2nd Place Winner",
+    "description": "Achieved 2nd place in LKS Web Technologies at the East Java provincial level among top student developers representing their regencies.",
+    "image": "/assets/images/achievements/ai-open-2026.webp"
   }
 ]
